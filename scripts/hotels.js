@@ -313,6 +313,149 @@ let Manali=[
         review:"4.3/5 Excellent (4 reviews)",
         type:"Resort" 
      },
+     {
+      img:'https://images.trvl-media.com/hotels/69000000/68100000/68097900/68097898/15c86670.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Hotel Smugglers",
+      location:"Nasogi",
+      refund:"Fully refundable Reserve now,pay later",
+      price:"Rs 2,376",
+      total:"Rs 2,670",
+      review:"5/5 Excellent (2 reviews)",
+      type:"spa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/84000000/83670000/83663400/83663364/6696e9cd.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Treebo Tryst Sattva",
+      location:"New Manali",
+      refund:"Fully refundable Reserve now,pay later",
+      price:"Rs 2,350",
+      total:"Rs 2,632",
+      review:"",
+      type:"spa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/6000000/5510000/5506800/5506761/89c3062f.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Span Resort and Spa",
+      location:"Manali",
+      refund:"Fully refundable",
+      price:"Rs 12,350",
+      total:"Rs 14,632",
+      review:"",
+      type:"spa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/84000000/83470000/83464900/83464854/c5f1483e.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Prini inn",
+      location:"Aleo",
+      refund:"Fully refundable",
+      price:"Rs 800",
+      total:"Rs 896",
+      review:"",
+      type:"Dinner Included" 
+   },
+
+]
+let goa=[
+   {
+      img:'https://images.trvl-media.com/hotels/1000000/30000/21000/20923/e8fa1812.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Tower Genova Airport Hotel & Conference Center",
+      location:"Sestri Ponente",
+      refund:"Fully refundable",
+      price:"Rs 6,710",
+      total:"Rs 7,860",
+      review:"3.7/5 Good (649 reviews)",
+      type:"villa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/6000000/5360000/5352500/5352453/8ce0af7e.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Best Western Premier CHC Airport",
+      location:"Sestri Ponente",
+      refund:"",
+      price:"Rs 8,900",
+      total:"Rs 10,270",
+      review:"4.3/5 Excellent (649 reviews)",
+      type:"villa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/3000000/2790000/2784300/2784201/7f97a547.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Holiday Inn Genoa City, an IHG Hotel",
+      location:"Sestri Ponente",
+      refund:"",
+      price:"Rs 9,290",
+      total:"Rs 10,697",
+      review:"4.1/5 Very Good (678 reviews)",
+      type:"villa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/1000000/850000/848400/848348/d0d07df0.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Grand Hotel Savoia",
+      location:"Pre",
+      refund:"Fully refundable",
+      price:"Rs 12,580",
+      total:"Rs 14,557",
+      review:"4.5/5 Wonderful (978 reviews)",
+      type:"spa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/1000000/10000/2600/2575/fe57348b.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Bristol Palace Hotel",
+      location:"San vicenzo",
+      refund:"Fully refundable Reserve now,pay later",
+      price:"Rs 16,580",
+      total:"Rs 18,717",
+      review:"4.5/5 Wonderful (1006 reviews)",
+      type:"spa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/2000000/1610000/1600300/1600286/703e0437.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Melia Genova",
+      location:"Carignano",
+      refund:"",
+      price:"Rs 12,091",
+      total:"Rs 14,017",
+      review:"4.6/5 Wonderful (690 reviews)",
+      type:"spa" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/2000000/1050000/1041900/1041839/0284df24.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Hotel Britannia",
+      location:"pre",
+      refund:"",
+      price:"Rs 9,116",
+      total:"Rs 10,267",
+      review:"3.7/5 Good (690 reviews)",
+      type:"Royal" 
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/1000000/610000/603200/603151/3a97725a.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"NH Collection Genova Marina",
+      location:"Genoa",
+      refund:"",
+      price:"Rs 17,014",
+      total:"Rs 19,197",
+      review:"4.4/5 Good (989 reviews)",
+      type:"Royal"
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/1000000/20000/19400/19357/148f052c.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Hotel Europa",
+      location:"Pre",
+      refund:"",
+      price:"Rs 17,014",
+      total:"Rs 19,197",
+      review:"3.6/5 Good (275 reviews)",
+      type:"Royal"
+   },
+   {
+      img:'https://images.trvl-media.com/hotels/18000000/17410000/17408400/17408307/e98dddf9.jpg?impolicy=resizecrop&rw=455&ra=fit',
+      title:"Hotel Palazzo Grillo",
+      location:"Genoa Historical Centre",
+      refund:"Fully refundable Reserve now,pay later",
+      price:"Rs 25,087",
+      total:"Rs 28,074",
+      review:"4.7/5 Exceptional (201 reviews)",
+      type:"Royal"
+   },
 
 ]
 
@@ -347,23 +490,35 @@ function Display(data){
     data.forEach(ele => {
         let div=document.createElement("div")
         div.className="child"
+        let div2=document.createElement("div")
+        div2.className="details"
+       let div3=document.createElement("div")
+       div3.className="pricediv"
         let img=document.createElement("img")
         img.src=ele.img
         let title=document.createElement("h3")
         title.innerText=ele.title
+        title.className="title"
         let location=document.createElement("p")
         location.style.color="grey"
         location.innerText=ele.title
+        location.className="loc"
         let refund=document.createElement("p")
         refund.innerText=ele.refund
         refund.style.color="#297a97"
+        refund.className="ref"
         let price=document.createElement("h2")
         price.innerText=ele.price
+        price.className="price"
         let total=document.createElement("p")
-        total.innerText=ele.total
+        total.innerText=ele.total+" total"
+        total.className="tprice"
         let review=document.createElement('p')
         review.innerText=ele.review
-        div.append(img,title,location,refund,price,total,review)
+        review.className="rev"
+        div3.append(price,total)
+        div2.append(title,location,refund,review)
+        div.append(img,div2,div3)
         container.append(div)
     });
 }

@@ -1,0 +1,62 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 45%;
+    margin: auto;
+}
+#container>div{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+#container img{
+    width: 250px;
+    height: 180px;
+    border-radius: 15px 0 0 15px;
+    margin-right: 20px;
+}
+.price{
+    text-align: right;
+    margin-left: auto;
+    margin-top: auto;
+}
+.tprice{
+    text-align: center;
+    color: grey;
+}
+.pricediv{
+    margin-left: auto;
+    margin-top: 10%;
+}
+body{
+    background-color: rgb(248,245,244)
+   
+}
+.details{
+    margin-top: 10px;
+    line-height: 30px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.rev{
+    font-size: 15px;
+    
+    font-weight: bold;
+}
+.title{
+    font-size: 22px;
+    color: rgb(43, 40, 40);
+    font-weight: 500;
+}
+.loc{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.ref{
+    width: 160px;
+    line-height: 19px;
+}
