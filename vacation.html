@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Expedia Travel: Vacation Homes, Hotels, Car Rentals, Flights &amp; More
+  </title>
+  <link rel="shortcut icon" href="https://www.expedia.com/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="vacation.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2" id="logo" />
+    <ul>
+      <li>
+        <a href="#">More travel </a>
+        <div id="submenu">
+          <ul>
+            <li>
+              <a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/hotel-star.png"
+                  class="sub-logo" />Stays</a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-flight-interface-kiranshastry-solid-kiranshastry.png"
+                  class="sub-logo" />
+                Flights</a>
+            </li>
+            <li>
+              <a href="#"><img src="https://img.icons8.com/pastel-glyph/20/000000/car--v1.png"
+                  class="sub-logo" />Cars</a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://img.icons8.com/external-wanicon-lineal-wanicon/20/000000/external-suitcase-travel-wanicon-lineal-wanicon.png"
+                  class="sub-logo" />Packages</a>
+            </li>
+            <li>
+              <a href="#"><img src="https://img.icons8.com/dotty/20/000000/two-tickets.png" class="sub-logo" />Things to
+                do</a>
+            </li>
+            <li>
+              <a href="#"><img
+                  src="https://img.icons8.com/external-glyph-andi-nur-abdillah/20/000000/external-Cruiser-military-(glyph)-glyph-andi-nur-abdillah.png"
+                  class="sub-logo" />Cruises</a>
+            </li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Groups & meetings</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div id="menu">
+      <div>
+        <img src="https://img.icons8.com/ios/18/000000/globe--v1.png" class="sub-logo" />
+        <a href="#">English</a>
+      </div>
+      <div><a href="#">List your property</a></div>
+      <div><a href="#">Support</a></div>
+      <div><a href="#">Trips</a></div>
+      <!-- <div><img id="bell" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-1024.png"/></div> -->
+      <div><a href="#">Sign in</a></div>
+    </div>
+  </div>
+
+  <!-- body -->
+
+
+  <div>
+    <h1 style="margin-left: 40px;margin-top: 40px;margin-bottom: 10px;font-weight: 500;">Search vacation packages</h1>
+    <p style="margin-left: 40px;">Choose one or more items to build your trip:</p>
+    <br>
+    <div><button id="selected1">Stay added</button> <button id="selected2">Flight added</button> <button id="car">Add a
+        car</button></div>
+
+    <br>
+    <button class="loca1"><img id="loc"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAXVBMVEX///8AAADV1dVRUVHDw8Ovr6/k5OT19fXKysp3d3f7+/ve3t41NTVoaGi4uLh/f38rKyvq6uqNjY0gICCoqKhubm6fn58XFxeVlZWFhYVJSUlYWFhhYWE+Pj4bGxtCgBc2AAADFUlEQVRoge2aW3uCMAyGrZxEEUXnATf9/z9zY5vjkC+lmJTd9L3O08/WJE1SFotAIBAIBAIzss425bnO87w+l5tsPaNyXEemS1TH8wivcoPIV96Vkz1UbtgnXpXjglVuKPwdfbq1KjdsUz/S5WVU2phL6UN656DcsNOXjsZVf4mUlbObs7Qxt0xV2n3X3zvXFP+YJG3Mh550PVHamFpLOp4sbYxSlslekDZG5y8/vaR90pBevSRtjMK9tp4WXi2RvKJgHW2/K+NVXO7YS1Xubsy28+WfxRIXE/LcusTLVj2jCv/AJbOmK/D2uhKzKzIT3mhrVKicgeEZ2BUyb0MBdoCWB2ApCzNwlpwLgf+c/jdTANc250HAK28ibboenytB7pVIp+7bhhuXVK3U1Y68766PxFribAlZLbdY0/wm6VTeyGootp/QGH9T1bbthJ5S0NbQtqUqmgQl2iVZbWuxpm2qpDEEV4klvqmxJL4ruhy/FXpIpmKNHaDLvbO279RYIo0aMa4EBEWlrC2jjm4KfJAVqHAkbo5LRbwb1KoKi0VUr6ErHDVOhUwalmG05cDNCy7s3NmgRYeRBqKrYSPUBsnqm3vyrEnS5I5NbCnQDdyYfPGITofr4RQ9OANpW7Jwn6sN0ZizgbzqhCifPkHtzji24moCLnPUIRcd6f+cM00f7WkO95gEY0GcVlpgZrUgzaZdMvtbxZBCdZA8zd2Un02mDBdVRoodpmQ3lYzWxT27KWW0Lux9NeChL81fpgMUrk4KM7ocYBsOvE7FP4W27NUd7QemLOvh5VmwAXQ9A/iOSQoYeQ3w9BTbMBbkHkK7ZeT926f0SJB7Ce0WW5D7Ce2WjC8cL6q3NoIPcm+h3cJ99CBvv8ZJ8alfPIZ2C5iDGOl8wxnU6Gt/5MCBynXFgtwOLdc1C/IRhq8Tx/mkyZzV/zdcHfqp1Xcy7dOrn3zVSRzd1DpDMu3TptY5kmmftkma+cQbni8zfr8UZIhmTaZ9fqrWWa4vSvMmJXteF3A39/+S/qpaPVemNmbN44FAIBAIBH75BHDwHAwJjid9AAAAAElFTkSuQmCC">Leaving
+      From</button><button class="arr"><img id="arrow"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAMAAAAvpwKjAAAAY1BMVEX///8AAAC6urqMjIzU1NTi4uLm5ub4+PjY2NilpaWDg4Pw8PBGRkYcHBzr6+u1tbVBQUEVFRUhISFwcHCvr69LS0vBwcGSkpJiYmI6OjrLy8t2dnZTU1OZmZkKCgpnZ2csLCykthSzAAACF0lEQVR4nO3aaZKCQAwF4H6KrOKCguCC3v+Ug8xYsvywCN0mNZV3AOorG0ISNEaj0Wg0Go1Go9H806w8bkEbr464Cc94wCHhRrQMrENuRctAehTBAJaBCAZyXwQDWSGCAZxkMFBuRDBQnUUwAK6SGvYZuMwpqcF2QcxtwMBuRkldDS82I/utCAYQU0uqXQauxJJqmYFsIYIB3CgHY59BKqkOGKimd6kuGISS6oaBWATjPvX2cMKY3hg6YFC6MfuMnPKGs86YenM6YdTEucUugzzFWWXcyQ3YJl4ScxkpWNrRYS+a8jTng86ca8nQZ7BN1F3Gg2+M7TB2KzZFh0ErnLYZvAufP0bOeCBvxuQGxwVDwGq0YaSs66YXo2ReArbxTq4VwVLCWj65gn8JbYo9BDCiZzngZvglBDDCNQQwjq/XFSvj3eUyMsIKAhiLB/gZQdzrcJkYmzsEMJ6Fs5uahRFhmAt1pIzpY2w5UswI9QOgt7OpoDLGB8LAGDynTIzXm4yXUaTWFdMZ9g+EwlhZfU7JDCe/BeFQbD+qRIbxqs9X/QLDchknM0ww+rTMwmh6rkwEw/hXEQzbVYz+T5/t/vPVv8Aw4ajluBXU/1PMWXokw88BXANCJINhzpUIRr+kco7SJxkMU2QiGMbPRTBMsBTBMOaYimD8Dg38DJMcRDCaklpLWFY3XSrzJyONRqPRaDQajUbjLj9LLhr2DwldCgAAAABJRU5ErkJggg=="></button>
+    <button class="loca2"><img id="loc"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAXVBMVEX///8AAADV1dVRUVHDw8Ovr6/k5OT19fXKysp3d3f7+/ve3t41NTVoaGi4uLh/f38rKyvq6uqNjY0gICCoqKhubm6fn58XFxeVlZWFhYVJSUlYWFhhYWE+Pj4bGxtCgBc2AAADFUlEQVRoge2aW3uCMAyGrZxEEUXnATf9/z9zY5vjkC+lmJTd9L3O08/WJE1SFotAIBAIBAIzss425bnO87w+l5tsPaNyXEemS1TH8wivcoPIV96Vkz1UbtgnXpXjglVuKPwdfbq1KjdsUz/S5WVU2phL6UN656DcsNOXjsZVf4mUlbObs7Qxt0xV2n3X3zvXFP+YJG3Mh550PVHamFpLOp4sbYxSlslekDZG5y8/vaR90pBevSRtjMK9tp4WXi2RvKJgHW2/K+NVXO7YS1Xubsy28+WfxRIXE/LcusTLVj2jCv/AJbOmK/D2uhKzKzIT3mhrVKicgeEZ2BUyb0MBdoCWB2ApCzNwlpwLgf+c/jdTANc250HAK28ibboenytB7pVIp+7bhhuXVK3U1Y68766PxFribAlZLbdY0/wm6VTeyGootp/QGH9T1bbthJ5S0NbQtqUqmgQl2iVZbWuxpm2qpDEEV4klvqmxJL4ruhy/FXpIpmKNHaDLvbO279RYIo0aMa4EBEWlrC2jjm4KfJAVqHAkbo5LRbwb1KoKi0VUr6ErHDVOhUwalmG05cDNCy7s3NmgRYeRBqKrYSPUBsnqm3vyrEnS5I5NbCnQDdyYfPGITofr4RQ9OANpW7Jwn6sN0ZizgbzqhCifPkHtzji24moCLnPUIRcd6f+cM00f7WkO95gEY0GcVlpgZrUgzaZdMvtbxZBCdZA8zd2Un02mDBdVRoodpmQ3lYzWxT27KWW0Lux9NeChL81fpgMUrk4KM7ocYBsOvE7FP4W27NUd7QemLOvh5VmwAXQ9A/iOSQoYeQ3w9BTbMBbkHkK7ZeT926f0SJB7Ce0WW5D7Ce2WjC8cL6q3NoIPcm+h3cJ99CBvv8ZJ8alfPIZ2C5iDGOl8wxnU6Gt/5MCBynXFgtwOLdc1C/IRhq8Tx/mkyZzV/zdcHfqp1Xcy7dOrn3zVSRzd1DpDMu3TptY5kmmftkma+cQbni8zfr8UZIhmTaZ9fqrWWa4vSvMmJXteF3A39/+S/qpaPVemNmbN44FAIBAIBH75BHDwHAwJjid9AAAAAElFTkSuQmCC">Going
+      to</button> <button id="date">Departing</button> <button id="date">Returning</button>
+    <br>
+    <br>
+
+    <input id="check" type="checkbox">
+    <p style="margin-left: 65px;margin-top: -24px;">I only need accommodations for part of my trip</p>
+    <br>
+    <div>
+      <button id="search">Search</button>
+    </div>
+  </div>
+  <br>
+  <div id="ad1">
+    <img id="ad1-img" src="https://tpc.googlesyndication.com/simgad/3902827450567038887?">
+    <img id="hilton" src="https://tpc.googlesyndication.com/simgad/10574419027046390888?">
+    <h3>Unwind in the Dominican Replublic</h3>
+    <p>Escape to a vibrant world where everything is included, exclusively for adults </p>
+  </div>
+  <div id="ad2">
+    <img id="ad2-img" src="https://tpc.googlesyndication.com/simgad/3533558033631707078?">
+    <h3>Hilton Playa del Carmen</h3>
+    <p>Make a splash with all-inclusive all-suite accomodations</p>
+  </div>
+  <div id="ad3">
+    <img id="ad3-img" src="https://tpc.googlesyndication.com/simgad/2713220208026712390?">
+    <h3>All-inclusive for all ages</h3>
+    <p>Last minute getaways to Hilton La Romana</p>
+  </div>
+  <br>
+  <div style="margin-left: 40px;">
+    <h1 style="font-size: 30px;font-weight: 500;">Top Vacation Destinations</h1>
+    <br>
+    <p>Tick one more destination off of your bucket list with one of our most popular vacations in 2022</p>
+    <div id="grid">
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Puerto_Rico_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+        <p>Puerto Rico</p>
+      </div>
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Las_Vegas__BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+        <p>Las Vegas</p>
+      </div>
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Greece_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+        <p>Greece</p>
+      </div>
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Italy_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+        <p>Italy</p>
+      </div>
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Hawaii_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+        <p>Hawai</p>
+      </div>
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Jamaica_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh">
+        <p>Jamaica</p>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div style="margin-left: 40px;">
+    <h1 style="font-weight: 500;">Find your Perfect Summer Vacation</h1>
+    <br>
+    <p>Works off, the Sun is out and the time is right, so what are you waiting for? we are here to provide you with our
+      hottest vacation destinations.</p>
+  </div>
+  <div id="grid-2">
+    <div>
+      <img
+        src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Beach_Holidays_US.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh">
+      <h4>Beach Vacations</h4>
+      <p>Build a beach vacation package to suit your every need. Life is better on the beach!</p>
+    </div>
+    <div>
+      <img
+        src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/all-inclusive_holidays_US.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh">
+      <h4>All Inclusive Vacations</h4>
+      <p>All your needs are catered for with an all-inclusive vacation package. All the extras that make a lifetime of
+        memories.</p>
+    </div>
+    <div>
+      <img
+        src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Family_holidays_US_3_.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh">
+      <h4>Family Vacations</h4>
+      <p>Great offers for the entire family. Find peace of mind when you book a family vacation package with Expedia.
+      </p>
+    </div>
+
+  </div>
+  <br>
+  <div>
+    <h2 style="font-weight: 500;margin-left: 40px;">Find your next vacation package </h2>
+    <div id="grid-3">
+      <div>
+        <h5>Are vacation packages worth it?</h5>
+        <p>Vacation packages can save a lot on your 2022 vacation, as discounts may be available when booking multiple
+          aspects of your vacation at once, such as the hotel and the flight. Flights and hotel packages can include a
+          car rental at your destination. Check our package deal today on Expedia!
+
+        </p>
+        <br>
+        <h5>How much do vacation packages cost?</h5>
+        <p>The exact cost of a vacation package varies based on various factors such as destination, accommodation
+          quality, flight class, and even the time of year you visit. The type of vacation you embark on can also affect
+          cost with options like family packages and all-inclusive packages. You can search for your specific price
+          range, too, with plenty of vacations under $1,000, for example.</p>
+        <br>
+        <h5>How to choose your vacation package?</h5>
+        <p>To find the best vacation package, you'll need to consider the type of vacation you're looking to enjoy and
+          the destination. Using the site's search function, you can find a wide variety of packages available for your
+          chosen vacation location, while search filters can narrow down options based on vacation type. Browse our
+          deals now.</p>
+        <br>
+        <h5>How to find cheap vacation packages?</h5>
+        <p>If you're looking to save, be sure to set filters for any budget limitations you may have in your search.
+          Additionally, you can sort by price to automatically put the cheapest options first in your search results.
+          Weekend getaway packages can be relatively inexpensive as well if you are looking for cheap getaways.
+
+        </p>
+        <br>
+        <h5>How to vacation on a budget?</h5>
+        <p>Budget-friendly travel is easy when you book with Expedia, as we can help you keep prices low via search
+          filters, but that's not all. There are general trends to keep in mind regarding prices, such as travel
+          packages generally being cheaper during the off-season of your vacation destination. Additionally, the higher
+          the quality amenities you opt for, the higher the price typically is.</p>
+        <br>
+        <h5>How to get great vacation deals?</h5>
+        <p>Vacation deals are common with Expedia, as we offer plenty of discounts on great packages, with packages
+          already being a deal compared to booking hotels and flights separately. Plus, Expedia Rewards members have
+          access to exclusive travel deals that other visitors to Expedia can't take advantage of. </p>
+        <br>
+        <h5>How to find last-minute vacation deals?</h5>
+        <p>To book last-minute vacation trips, simply input your travel dates into the search and see what's available
+          at that time for your destination. You can still filter based on virtually anything you can imagine, including
+          amenities, price, star rating, and more.</p>
+        <br>
+        <h5>Where should I go on vacation?</h5>
+        <p>Booking a Hawaii vacation package is especially popular with all sorts of travelers, whether it's families or
+          couples, and Disney World packages have much to offer for families. Consider the kind of vacation you're
+          looking for to determine the perfect destination.</p>
+        <br>
+        <h5>What are some of the best vacation spots?</h5>
+        <p>Top vacation spots include cheap Caribbean vacations and European vacation packages. With rich culture,
+          history, and stunning natural beauty, a vacation package to these destinations can provide an unforgettable
+          adventure. </p>
+        <br>
+        <h5>Where to go on a vacation in the US?</h5>
+        <p>Staying in the US still offers easy access to great vacation places with Vegas packages and a Grand Canyon
+          vacation being popular choices among other options. Whether you’re seeking the thrills of the Vegas Strip or
+          the majestic views of the Grand Canyon, browse your options today. </p>
+
+
+      </div>
+      <div>
+        <h5>Where to go on vacation on a budget?</h5>
+        <p>Cheap vacation ideas can still take you to a variety of great cheap vacation destinations, including
+          Yellowstone vacations and Glacier National Park vacations. Parks and outdoor experiences tend to be free, so
+          national park vacations are excellent for a budget-friendly trip.
+
+        </p>
+        <br>
+        <h5>What are some great all-inclusive vacation packages?</h5>
+        <p>All-inclusive vacations to the Bahamas and all-inclusive vacations to Cancun are some of the best options
+          available, putting you in a Caribbean paradise. However, all-inclusive vacations are more varied than you
+          might think, with worldwide options. </p>
+        <br>
+        <h5>What are the best destinations for a family vacation?</h5>
+        <p>Traveling with kids means you'll need to find fun for the whole family, and Orlando vacation packages can put
+          you and your little ones in the world's theme park capital. Of course, a vacation package to Anaheim offers a
+          similar experience on the West coast. </p>
+        <br>
+        <h5>Where should I go on vacation this summer?</h5>
+        <p>If you're looking to embrace the season, head to the beach with a summer vacation package to Destin. Of
+          course, you may be more interested in escaping the heat with something like a vacation package to Vancouver.
+        </p>
+        <br>
+        <h5>How to find cheap beach vacations?</h5>
+        <p>In your search, you can apply search filters for beach trip packages and sort your results by price to see
+          the cheap vacation options first. With those standards, you can find amazing cheap trips with beach vacation
+          packages like vacation packages to Panama City and vacation packages to Myrtle Beach.
+
+        </p>
+        <br>
+        <h5>What are some great couples' vacations?</h5>
+        <p>Traveling with your partner means a more romantic adventure, which is easy when you book vacation packages to
+          Honolulu. However, you can always opt for the classics and get a vacation package to Paris. Even a simple
+          3-day cheap getaway can be suitable.
+
+        </p>
+        <br>
+        <h5>What are the best destinations for a luxury vacation?</h5>
+        <p>One of the best destinations for luxury is a Las Vegas vacation package, as the city was essentially designed
+          to make visitors feel luxurious. Of course, a Lake Tahoe vacation package can be just as fulfilling as a more
+          outdoor-oriented experience. Golf vacations also tend to be quite elegant. </p>
+        <br>
+        <h5>How to find great Christmas vacation packages?</h5>
+        <p>To find an excellent package for a Christmas vacation, simply put your travel dates into the search and
+          discover what's available. Vacation packages to New York and vacation packages to Chicago are trendy around
+          Christmas.
+
+        </p>
+        <br>
+        <h5>Where to get ski vacation packages?</h5>
+        <p>Ski vacation packages are readily available on Expedia, including vacation packages to Aspen, vacation
+          packages to Vail, and packages to other notable ski resorts. Check out the deals now and book your next ski
+          vacation today. </p>
+        <br>
+        <h5>Can I cancel my vacation package with Expedia?</h5>
+        <p>Yes, you can cancel your vacation package via your itinerary page on Expedia or by contacting customer
+          service. Remember that some packages are fully refundable, but the details vary based on each unique booking.
+          A fully refundable package may depend on how far out from the travel dates you're canceling and what airline
+          you are travelling with.
+
+        </p>
+        <br>
+        <h5>Why should I book my vacation package with Expedia?</h5>
+        <p>Booking with Expedia makes it easy to plan your entire vacation in advance. Vacation packages with airfare
+          included can also feature a rental car and even activities in some cases, with discounts typically coming with
+          booking more than one aspect of your trip at a time. Expedia Rewards members can accrue points with every
+          eligible purchase that can be put toward subsequent visits. Membership is free, so don't hesitate to join.</p>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <div>
+    <img id="img-2" src="https://tpc.googlesyndication.com/simgad/7814626114450818176?">
+  </div>
+  <br>
+
+  <div id="explore">
+    <h1 style="margin-left: 40px;font-size:30px;font-weight:500;">Explore, discover, and save</h1>
+    <br>
+    <div>
+      <img id="explore_img-1" src="https://tpc.googlesyndication.com/simgad/18059362380271944096?">
+      <h4>Labor Day in Playa del Carmen</h4>
+      <p>A boutique adult all-inclusive retreat just steps from 5th Avenue</p>
+      <img id="explore_img-2" src="https://tpc.googlesyndication.com/simgad/1126975826829150904?">
+    </div>
+  </div>
+  <br>
+  <div id="qr">
+    <div>
+      <img id="qr-img" src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg">
+      
+    </div>
+    <div id="text">
+      <h2>Our app takes you further</h2>
+      
+      <p>When you book on the app you can save up to 25% on select hotels while earning double the points with every booking. With these app deals you'll save even more on trips, and that means you can take more trips, and manage it all on the go.</p>
+      <br>
+      <h3>Text yourself a download link for easy access</h3>
+      
+      <button id="btn-1">Country code</button><input type="number" placeholder="Phone number"><button id="btn-2">Get the app</button>
+      
+  
+      <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+    </div>
+    <div>
+      <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_BNA_HP.png">
+      <p>Scan the QR code</p>
+    </div>
+
+  </div>
+  <br>
+  <div id="text-2">
+    <p>Explore a world of travel with Expedia</p>
+    <p>See our travel options</p>
+  </div>
+<br>
+<!-- footer -->
+
+
+
+  <div id="footer">
+    <img
+      src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+    />
+    <div>
+      <p>Company</p>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">List your property</a></li>
+        <li><a href="#">Partnerships</a></li>
+        <li><a href="#">Newsroom</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Advertising</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>Explore</p>
+      <ul>
+        <li><a href="#">United States of America travel guide</a></li>
+        <li><a href="#">Hotels in United States of America</a></li>
+        <li><a href="#">Vacation rentals in United States of America</a></li>
+        <li><a href="#">Vacation packages in United States of America</a></li>
+        <li><a href="#">Domestic flights</a></li>
+        <li><a href="#">Car rentals in United States of America</a></li>
+        <li><a href="#">All accommodation types</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>Policies</p>
+      <ul>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Vrbo terms and conditions</a></li>
+        <li><a href="#">Expedia Rewards Terms</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Do not sell my personal information</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>Help</p>
+      <ul>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Cancel your flight</a></li>
+        <li><a href="#">Refund timelines, policies & processes</a></li>
+        <li><a href="#">Use an Expedia coupon</a></li>
+        <li><a href="#">International travel documents</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="disclaimer">
+    <p>Expedia, Inc. is not responsible for content on external Web sites.</p>
+    <p>
+      © 2022 Expedia, Inc., an Expedia Group company. All rights reserved.
+      Expedia and the Airplane Logo are trademarks or registered trademarks of
+      Expedia, Inc. CST# 2029030-50.
+    </p>
+  </div>
+</body>
+
+</html>
+<script src="vacation.js"></script>
