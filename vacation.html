@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Expedia Travel: Vacation Homes, Hotels, Car Rentals, Flights &amp; More
+    </title>
+    <link
+      rel="shortcut icon"
+      href="https://www.expedia.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="vacation.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <img
+        src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2"
+        id="logo"
+      />
+      <ul>
+        <li>
+          <a href="#">More travel  </a>
+          <div id="submenu">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/ios-filled/20/000000/hotel-star.png"
+                    class="sub-logo"
+                  />Stays</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-flight-interface-kiranshastry-solid-kiranshastry.png"
+                    class="sub-logo"
+                  />
+                  Flights</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/pastel-glyph/20/000000/car--v1.png"
+                    class="sub-logo"
+                  />Cars</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/external-wanicon-lineal-wanicon/20/000000/external-suitcase-travel-wanicon-lineal-wanicon.png"
+                    class="sub-logo"
+                  />Packages</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/dotty/20/000000/two-tickets.png"
+                    class="sub-logo"
+                  />Things to do</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/external-glyph-andi-nur-abdillah/20/000000/external-Cruiser-military-(glyph)-glyph-andi-nur-abdillah.png"
+                    class="sub-logo"
+                  />Cruises</a
+                >
+              </li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Groups & meetings</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div id="menu">
+        <div>
+          <img
+            src="https://img.icons8.com/ios/18/000000/globe--v1.png"
+            class="sub-logo"
+          />
+          <a href="#">English</a>
+        </div>
+        <div><a href="#">List your property</a></div>
+        <div><a href="#">Support</a></div>
+        <div><a href="#">Trips</a></div>
+        <!-- <div><img id="bell" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-1024.png"/></div> -->
+        <div><a href="#">Sign in</a></div>
+      </div>
+    </div>
+
+      <!-- body -->
+
+
+      <div>
+        <h1 style="margin-left: 40px;margin-top: 40px;margin-bottom: 10px;font-weight: 500;">Search vacation packages</h1>
+        <p style="margin-left: 40px;">Choose one or more items to build your trip:</p>
+        <br>
+        <div><button id="selected1">Stay added</button> <button id="selected2">Flight added</button> <button id="car">Add a car</button></div>
+        
+        <br>
+        <button class="loca1"><img id="loc" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAXVBMVEX///8AAADV1dVRUVHDw8Ovr6/k5OT19fXKysp3d3f7+/ve3t41NTVoaGi4uLh/f38rKyvq6uqNjY0gICCoqKhubm6fn58XFxeVlZWFhYVJSUlYWFhhYWE+Pj4bGxtCgBc2AAADFUlEQVRoge2aW3uCMAyGrZxEEUXnATf9/z9zY5vjkC+lmJTd9L3O08/WJE1SFotAIBAIBAIzss425bnO87w+l5tsPaNyXEemS1TH8wivcoPIV96Vkz1UbtgnXpXjglVuKPwdfbq1KjdsUz/S5WVU2phL6UN656DcsNOXjsZVf4mUlbObs7Qxt0xV2n3X3zvXFP+YJG3Mh550PVHamFpLOp4sbYxSlslekDZG5y8/vaR90pBevSRtjMK9tp4WXi2RvKJgHW2/K+NVXO7YS1Xubsy28+WfxRIXE/LcusTLVj2jCv/AJbOmK/D2uhKzKzIT3mhrVKicgeEZ2BUyb0MBdoCWB2ApCzNwlpwLgf+c/jdTANc250HAK28ibboenytB7pVIp+7bhhuXVK3U1Y68766PxFribAlZLbdY0/wm6VTeyGootp/QGH9T1bbthJ5S0NbQtqUqmgQl2iVZbWuxpm2qpDEEV4klvqmxJL4ruhy/FXpIpmKNHaDLvbO279RYIo0aMa4EBEWlrC2jjm4KfJAVqHAkbo5LRbwb1KoKi0VUr6ErHDVOhUwalmG05cDNCy7s3NmgRYeRBqKrYSPUBsnqm3vyrEnS5I5NbCnQDdyYfPGITofr4RQ9OANpW7Jwn6sN0ZizgbzqhCifPkHtzji24moCLnPUIRcd6f+cM00f7WkO95gEY0GcVlpgZrUgzaZdMvtbxZBCdZA8zd2Un02mDBdVRoodpmQ3lYzWxT27KWW0Lux9NeChL81fpgMUrk4KM7ocYBsOvE7FP4W27NUd7QemLOvh5VmwAXQ9A/iOSQoYeQ3w9BTbMBbkHkK7ZeT926f0SJB7Ce0WW5D7Ce2WjC8cL6q3NoIPcm+h3cJ99CBvv8ZJ8alfPIZ2C5iDGOl8wxnU6Gt/5MCBynXFgtwOLdc1C/IRhq8Tx/mkyZzV/zdcHfqp1Xcy7dOrn3zVSRzd1DpDMu3TptY5kmmftkma+cQbni8zfr8UZIhmTaZ9fqrWWa4vSvMmJXteF3A39/+S/qpaPVemNmbN44FAIBAIBH75BHDwHAwJjid9AAAAAElFTkSuQmCC">Leaving From</button><button class="arr"><img id="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAMAAAAvpwKjAAAAY1BMVEX///8AAAC6urqMjIzU1NTi4uLm5ub4+PjY2NilpaWDg4Pw8PBGRkYcHBzr6+u1tbVBQUEVFRUhISFwcHCvr69LS0vBwcGSkpJiYmI6OjrLy8t2dnZTU1OZmZkKCgpnZ2csLCykthSzAAACF0lEQVR4nO3aaZKCQAwF4H6KrOKCguCC3v+Ug8xYsvywCN0mNZV3AOorG0ISNEaj0Wg0Go1Go9H806w8bkEbr464Cc94wCHhRrQMrENuRctAehTBAJaBCAZyXwQDWSGCAZxkMFBuRDBQnUUwAK6SGvYZuMwpqcF2QcxtwMBuRkldDS82I/utCAYQU0uqXQauxJJqmYFsIYIB3CgHY59BKqkOGKimd6kuGISS6oaBWATjPvX2cMKY3hg6YFC6MfuMnPKGs86YenM6YdTEucUugzzFWWXcyQ3YJl4ScxkpWNrRYS+a8jTng86ca8nQZ7BN1F3Gg2+M7TB2KzZFh0ErnLYZvAufP0bOeCBvxuQGxwVDwGq0YaSs66YXo2ReArbxTq4VwVLCWj65gn8JbYo9BDCiZzngZvglBDDCNQQwjq/XFSvj3eUyMsIKAhiLB/gZQdzrcJkYmzsEMJ6Fs5uahRFhmAt1pIzpY2w5UswI9QOgt7OpoDLGB8LAGDynTIzXm4yXUaTWFdMZ9g+EwlhZfU7JDCe/BeFQbD+qRIbxqs9X/QLDchknM0ww+rTMwmh6rkwEw/hXEQzbVYz+T5/t/vPVv8Aw4ajluBXU/1PMWXokw88BXANCJINhzpUIRr+kco7SJxkMU2QiGMbPRTBMsBTBMOaYimD8Dg38DJMcRDCaklpLWFY3XSrzJyONRqPRaDQajUbjLj9LLhr2DwldCgAAAABJRU5ErkJggg=="></button> <button class="loca2"><img id="loc" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAXVBMVEX///8AAADV1dVRUVHDw8Ovr6/k5OT19fXKysp3d3f7+/ve3t41NTVoaGi4uLh/f38rKyvq6uqNjY0gICCoqKhubm6fn58XFxeVlZWFhYVJSUlYWFhhYWE+Pj4bGxtCgBc2AAADFUlEQVRoge2aW3uCMAyGrZxEEUXnATf9/z9zY5vjkC+lmJTd9L3O08/WJE1SFotAIBAIBAIzss425bnO87w+l5tsPaNyXEemS1TH8wivcoPIV96Vkz1UbtgnXpXjglVuKPwdfbq1KjdsUz/S5WVU2phL6UN656DcsNOXjsZVf4mUlbObs7Qxt0xV2n3X3zvXFP+YJG3Mh550PVHamFpLOp4sbYxSlslekDZG5y8/vaR90pBevSRtjMK9tp4WXi2RvKJgHW2/K+NVXO7YS1Xubsy28+WfxRIXE/LcusTLVj2jCv/AJbOmK/D2uhKzKzIT3mhrVKicgeEZ2BUyb0MBdoCWB2ApCzNwlpwLgf+c/jdTANc250HAK28ibboenytB7pVIp+7bhhuXVK3U1Y68766PxFribAlZLbdY0/wm6VTeyGootp/QGH9T1bbthJ5S0NbQtqUqmgQl2iVZbWuxpm2qpDEEV4klvqmxJL4ruhy/FXpIpmKNHaDLvbO279RYIo0aMa4EBEWlrC2jjm4KfJAVqHAkbo5LRbwb1KoKi0VUr6ErHDVOhUwalmG05cDNCy7s3NmgRYeRBqKrYSPUBsnqm3vyrEnS5I5NbCnQDdyYfPGITofr4RQ9OANpW7Jwn6sN0ZizgbzqhCifPkHtzji24moCLnPUIRcd6f+cM00f7WkO95gEY0GcVlpgZrUgzaZdMvtbxZBCdZA8zd2Un02mDBdVRoodpmQ3lYzWxT27KWW0Lux9NeChL81fpgMUrk4KM7ocYBsOvE7FP4W27NUd7QemLOvh5VmwAXQ9A/iOSQoYeQ3w9BTbMBbkHkK7ZeT926f0SJB7Ce0WW5D7Ce2WjC8cL6q3NoIPcm+h3cJ99CBvv8ZJ8alfPIZ2C5iDGOl8wxnU6Gt/5MCBynXFgtwOLdc1C/IRhq8Tx/mkyZzV/zdcHfqp1Xcy7dOrn3zVSRzd1DpDMu3TptY5kmmftkma+cQbni8zfr8UZIhmTaZ9fqrWWa4vSvMmJXteF3A39/+S/qpaPVemNmbN44FAIBAIBH75BHDwHAwJjid9AAAAAElFTkSuQmCC">Going to</button> <button id="date">Departing</button> <button id="date">Returning</button>
+        <br>
+        <br>
+
+        <input id="check" type="checkbox"> <p style="margin-left: 65px;margin-top: -24px;">I only need accommodations for part of my trip</p>
+        <br>
+        <div>
+          <button id="search">Search</button>
+        </div>
+        </div>
+
+  </body>
+</html>
+<script src="vacation.js"></script>
