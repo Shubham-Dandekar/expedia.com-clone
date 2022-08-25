@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <div id="navbar">
@@ -87,13 +88,40 @@
             src="https://img.icons8.com/ios/18/000000/globe--v1.png"
             class="sub-logo"
           />
-          <a href="#">English</a>
+          <a href="#" id="display-language">English</a>
         </div>
         <div><a href="#">List your property</a></div>
         <div><a href="#">Support</a></div>
         <div><a href="#">Trips</a></div>
         <div><a href="#">Sign in</a></div>
       </div>
+    </div>
+    <div id="pop-up">
+      <div id="display">
+        <button onclick="closepopup()">X</button>
+        <h3>Display settings</h3>
+      </div>
+      <div id="dis">
+        <img
+          src="https://www.gyorbike.hu/media/ikon/ikon-informacio-dblue.png"
+        />
+        <p>
+          You can only access your trip information and Expedia Rewards points
+          from the Expedia site you booked on.
+        </p>
+      </div>
+      <form action="">
+        <select id="region">
+          <option value="">India</option>
+        </select>
+        <select id="language">
+          <option value="">English</option>
+        </select>
+        <select id="currency">
+          <option value="">INR ₹</option>
+        </select>
+        <button onclick="closepopup()">Save</button>
+      </form>
     </div>
     <div id="footer">
       <img
@@ -156,3 +184,4 @@
   </body>
 </html>
 <script src="navbar.js"></script>
+<script src="popup.js"></script>
