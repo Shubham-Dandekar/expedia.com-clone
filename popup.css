@@ -1,0 +1,65 @@
+#pop-up {
+  visibility: hidden;
+  position: absolute;
+}
+
+#open-popup {
+  visibility: visible;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: white;
+}
+
+#display {
+  display: flex;
+  padding: 20px;
+}
+
+#display button {
+  width: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: blue;
+  margin-right: 20px;
+}
+
+#dis {
+  display: flex;
+  background-color: #222b4c;
+  color: white;
+  padding: 10px;
+}
+
+#dis img {
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#open-popup form select,
+#open-popup form button {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid blue;
+}
+
+#open-popup form button {
+  background-color: blue;
+  color: white;
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+#open-popup button:hover {
+  cursor: pointer;
+}
