@@ -94,6 +94,7 @@
     height: auto;
     margin: auto;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 #terms_conditions>h3{
     font-size: 15px;
@@ -191,6 +192,14 @@
 .hotels>div:nth-child(4)>div>p{
     text-decoration: line-through;
 }
+.hotels>div:nth-child(4)>div>p>i{
+    border: 1px solid black;
+    width: 15px;
+    font-size: 12px;
+    border-radius: 150px;
+    padding-left: 4px;
+
+}
 .hotels>div:nth-child(4)>div>p+h2{
     letter-spacing: 1px;
 }
@@ -241,6 +250,11 @@
 }
 #booking>h1{
     margin-bottom: 15px;
+}
+#booking>div>i{
+    position: absolute;
+    margin-left: 10px;
+   padding-top: 12px;
 }
 input[type="text"],select,textarea{
     width: 360px;
@@ -314,6 +328,15 @@ button{
    #dine{
     margin-bottom: 20px;
    } 
+   input[type="text"],select,textarea{
+    margin-bottom: 25px;
+   }
+   input[type="date"],select,textarea{
+    margin-bottom: 25px;
+   }
+   input[type="number"],select,textarea{
+    margin-bottom: 25px;
+   }
 }
 @media all and (min-width: 100px) and (max-width: 400px){
     #head_image>img{
@@ -368,4 +391,14 @@ button{
         color:  #465280;
         margin-bottom: 30px;
     }
+    input[type="text"],select,textarea{
+        margin-bottom: 25px;
+        width: 60%;
+       }
+       input[type="date"],select,textarea{
+        margin-bottom: 25px;
+       }
+       input[type="number"],select,textarea{
+        margin-bottom: 25px;
+       }
 }
