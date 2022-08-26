@@ -6,39 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expedia group</title>
     <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/aboutnav.css">
     <script src="https://kit.fontawesome.com/1b92080d15.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div id="heading_logo">
-            <div>
-                <img src="https://s27.q4cdn.com/708721433/files/design/expedia-group-logo-white.svg" alt="Expedia Group">
-            </div>
+    <nav>
+        <div class="brand_logo">
+            <img src="https://s27.q4cdn.com/708721433/files/design/expedia-group-logo-white.svg" alt="Expedia Error">
         </div>
-        <div id="navbar">
-            <div>
-                <ul>
-                    <li>Who We Are
-                        <ul id="dropdown">
-                            <div id="boxes">
-                                <li>Our Story</li>
-                                <li>Leadership</li>
-                                <li>Community Impact</li>
-                                <li>Corporate Standards</li>
-                                <li>Inclusion & Diversity</li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li>Travel With Us</li>
-                    <li>Partner With Us</li>
-                    <li>Investors</li>
-                    <li>Media</li>
-                    <li>Careers</li>
-                 </ul>
-            </div>
-        
-        </div>
-    </header>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Travel With Us</a></li>
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </nav>
     <div id="video_box">
         <video autoplay loop muted>
             <source src="https://s27.q4cdn.com/708721433/files/videos/home-bg-final.mp4" type="video/mp4">
@@ -98,22 +86,22 @@
         <!-- SLiding div -->
         <div id="carauser">
              <div id="image">
-                <img src="https://s27.q4cdn.com/708721433/files/images/2020/home-slider-1.png" alt="">
+                <img id="slide_image" src="https://s27.q4cdn.com/708721433/files/images/2020/home-slider-1.png" alt="">
              </div>
              <div>
                 <div>
-                    <p>The Expedia Group platform makes over 600 billion AI predictions a year.</p>
+                    <p id="slide_para">The Expedia Group platform makes over 600 billion AI predictions a year.</p>
                 </div>
                
                 <p>Learn more</p>
                 <div id="bton">
-                    <button id="left_btn"><</button>
-                    <button id="right_btn">></button>
+                    <button id="left_btn"><i class="fa-solid fa-angle-left fa-2xl"></i></button>
+                    <button id="right_btn"><i class="fa fa-angle-right fa-2xl"></i></button>
                 </div>
                
              </div>
              <div>
-                <img src="" alt="">
+                <img src="https://i.ibb.co/q11MKpQ/E2-A108-A5-238-F-45-D2-BE68-8-C1464-B33374-removebg-preview.png" alt="E2-A108-A5-238-F-45-D2-BE68-8-C1464-B33374-removebg-preview" alt="">
              </div>
         </div>
 
@@ -176,12 +164,12 @@
     </div>
     <div id="footer_bar">
          <ul>
-            <li>Who we are</li>
-            <li>Travel with us</li>
-            <li>Partner With us</li>
-            <li>Investors</li>
-            <li>Media</li>
-            <li>Careers</li>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Travel with us</a></li>
+            <li><a href="#">Partner With us</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Careers</a></li>
          </ul>
     </div>
     <div id="footer_para">
