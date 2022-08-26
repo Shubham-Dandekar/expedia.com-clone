@@ -32,11 +32,13 @@ function Display(data){
         let review=document.createElement('p')
         review.innerText=ele.review
         review.className="rev"
-        div3.append(price,total)
+        div3.append(price)
         div2.append(title,location,refund,review)
         div.append(img,div2,div3)
         container.append(div)
-       
+        let check=document.getElementById("check")
+        check.innerText=ele.total
     });
 }
+
 Display(detail_arr)
