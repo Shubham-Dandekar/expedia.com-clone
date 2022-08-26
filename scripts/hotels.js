@@ -795,7 +795,7 @@ let goa=[
 
 
 let container=document.getElementById("container")
-
+let detail_arr=JSON.parse(localStorage.getItem("details"))||[]
 function Display(data){
     data.forEach(ele => {
         let div=document.createElement("div")
@@ -830,6 +830,13 @@ function Display(data){
         div2.append(title,location,refund,review)
         div.append(img,div2,div3)
         container.append(div)
+        div.addEventListener("click",function(){
+         detail_arr=[]
+         detail_arr.push(ele)
+         console.log(detail_arr)
+         localStorage.setItem("details",JSON.stringify(detail_arr))
+         window.location.href="details.html"
+        })
     });
 }
 Display(all_arr[0])
