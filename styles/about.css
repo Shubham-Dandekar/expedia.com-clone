@@ -1,118 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Century Gothic', Georgia, Verdana, sans-serif;
-}
-header{
-    width: 100%;
-    height: 150px;
-    background-color: rgb(0,0,153);
-}
-#heading_logo{
-    width: 95%;
-    height: 80px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#heading_logo>div{
-    width: 25%;
-    height: 45px;
-    margin-top: 30px;
-}
-#heading_logo>div>img{
-    width: 100%;
-    height: 40px;
-    cursor: pointer;
-}
-#navbar{
-    width: 100%;
-    height: 60px;
-    margin-top: -20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#navbar>div{
-    width: 55%;
-    height: 50%;
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-}
-#navbar>div>ul{
-    width: auto;
-    list-style: none;
-    padding: 0;
-    /* margin: 0; */
-    display: flex;
-    margin: auto;
-   flex-wrap: wrap;
-}
-#navbar>div>ul>li{
-    width: auto;
-    position: relative;
-    cursor:pointer;
-    font-size: 16px;
-    font-family: 'Century Gothic', Georgia, Verdana, sans-serif;
-   margin: 20px 25px 0 15px;
-    line-height: 30px;
-    color: white;
-    font-weight: bold;
-}
-#dropdown{
-    position: absolute;
-    top: 80%;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    font-size: 18px;
-  
-}
-#boxes{
-    width: 900px;
-    height: 60px;
-    background-color: rgb(4, 4, 104);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: inline-flex;
-    margin: auto;
-}
-li{
-    list-style: none;
-    margin: auto;
-}
-li:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-#dropdown>div{
-    display: none;
-}
-#dropdown>div>{
-    display: none;
-}
-#navbar li:hover > #dropdown div{
-    display: block;
-    line-height: 20px;
-    margin-top: 25px;
-    margin-left: -10px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background-color: rgb(4, 4, 104); */
-    
-}
-#navbar li:hover > #dropdown div>li{
-    display: inline-flex;
-    line-height: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-#navbar li:hover > #dropdown div>li:hover{
-    text-decoration: underline;
 }
 #video_box{
     width: 100%;
@@ -176,6 +66,7 @@ li:hover{
 #logo_container{
     width: 100%;
     height: auto;
+    margin: auto;
     margin-top: 90px;
     margin-bottom: 60px;
 }
@@ -234,12 +125,12 @@ li:hover{
 }
 #carauser>div:nth-child(2){
     width: 38%;
-    height: 60%;
-
+    height: 70%;
 }
 #carauser>div:nth-child(2)>div{
     width: 65%;
     margin: auto;
+    margin-left: 105px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,16 +150,23 @@ li:hover{
     color: white;
 }
 #carauser>div:nth-child(3){
-    width: 20%;
+    width: 28%;
+    height: 300px;
+    margin-right: -100px;
+    position: relative;
+    top: 18%;
+}
+#carauser>div:nth-child(3)>img{
+    width: 100%;
 }
 #bton{
     width: 100%;
-    height: 40px;
+    height: 80px;
    
 }
 #bton>button{
     width: 30px;
-    height: 50px;
+    height: 100%;
     font-size: 30px;
     background: none;
     border: none;
@@ -277,11 +175,11 @@ li:hover{
 }
 #bton>button:nth-child(1){
 
-    left: 520px;
+    left: 450px;
     
 }
 #bton>button:nth-child(2){
-    right: 520px;
+    right: 450px;
    
 }
 #investors{
@@ -387,6 +285,7 @@ footer{
     width: auto;
     display: flex;
     margin: auto;
+    list-style: none;
 }
 #footer_bar>ul>li{
     color: white;
@@ -394,6 +293,11 @@ footer{
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    margin: 0 25px;
+}
+#footer_bar>ul>li>a{
+    text-decoration: none;
+    color: white;
 }
 #footer_para{
     width: 41%;
@@ -415,7 +319,6 @@ footer{
     width: 12%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
     margin: auto;
     margin-top: 30px;
 }
@@ -428,4 +331,247 @@ footer{
 #footer_bar>ul>li:hover{
     color: white;
     text-decoration: underline;
+}
+#icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none ;
+}
+@media all and (min-width: 401px) and (max-width: 800px){
+    #with_us{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box{
+        margin-bottom: 90px;
+    }
+    #logo_container{
+        margin-top: -30px;
+    }
+    .long{
+        width: 80%;
+
+    }
+    .short{
+    width: 70%;
+    }
+    .shorter{
+        width: 45%;
+    }
+    #carauser{
+        height: 600px;
+        display: grid;
+        margin: auto;
+        grid-template-rows: repeat(3,1fr);
+    }
+    #carauser>div:nth-child(1){
+        width: 160px;
+        height: 160px;
+        margin: auto;
+        margin-top: 60px;
+        position: static;
+        
+    }
+    #carauser>div:nth-child(2){
+        width: 100%;
+        height: 300px ;
+        margin-top: 60px;
+    }
+    #bton>button{
+        width: 50px;
+        height: 60px;
+        font-size: 40px;
+    }
+    #bton>button:nth-child(1){
+
+        left: 50px;
+        
+        
+    }
+    #bton>button:nth-child(2){
+        right: 50px;
+       
+    }
+    #carauser>div:nth-child(3){
+        width: 0;
+        height: 0%;
+        display: none;
+    }
+    #investors{
+        height: auto;
+        background-color: white;
+        background-image: none;
+        margin-bottom: 80px;
+    }
+    #investors>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .carrer_section>div:nth-child(3){
+        width: 60%;
+        margin: auto;
+    }
+    .carrer_section>div:nth-child(3)>p{
+        font-size: 18px;
+    }
+
+    footer{
+        height: auto;
+        margin-bottom: 0;
+    }
+    #footer_logo{
+        position: relative;
+       top: -30px;
+    }
+    #footer_bar>ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    }
+    #footer_bar>ul>li{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    #footer_para{
+        width:95%;
+        
+    }
+    #footer_para>p{
+        line-height: 25px;
+    }
+    #footer_terms{
+        width: 40%;
+        margin-bottom: 20px;
+        margin-left: 260px;
+       
+    }
+    #icon{
+        display: block;
+    }
+
+
+}   
+
+@media all and (min-width: 100px) and (max-width: 400px){
+
+    #with_us{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box{
+        margin-bottom: 60px;
+    }
+    #logo_container{
+        width: 100%;
+        height: auto;
+    }
+    .long{
+        width: 40%;
+        height: auto;
+        margin-bottom: -10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+    .short{
+        width: 40%;
+        height: auto;
+        margin-bottom: -10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .shorter{
+        width: 40%;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+    }
+    #carauser{
+        height: 600px;
+        display: grid;
+        margin: auto;
+        grid-template-rows: repeat(3,1fr);
+    }
+    #carauser>div:nth-child(1){
+        width: 160px;
+        height: 160px;
+        margin: auto;
+        margin-top: 60px;
+        position: static;
+        
+    }
+    #carauser>div:nth-child(2){
+        width: 100%;
+        height: 300px ;
+        margin: auto;
+        margin-top: 60px;
+    }
+    #carauser>div:nth-child(2)>div{
+        margin: auto;
+    }
+    #bton>button{
+        width: 50px;
+        height: 60px;
+        font-size: 40px;
+    }
+    #bton>button:nth-child(1){
+
+        left: 50px;
+        
+        
+    }
+    #bton>button:nth-child(2){
+        right: 50px;
+       
+    }
+    #carauser>div:nth-child(3){
+        width: 0;
+        height: 0%;
+        display: none;
+    }
+    #investors{
+        height: auto;
+        background-color: white;
+        background-image: none;
+        margin-bottom: 80px;
+    }
+    #investors>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer{
+        height: auto;
+        margin-bottom: 0%;
+    }
+    #footer_bar{
+        width: 100%;
+        
+    }
+    #footer_bar>ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #footer_bar>ul>li{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    #footer_para{
+        width: 100%;
+        margin: auto;
+        
+    }
+    #footer_para>p{
+        text-align: center;
+        font-size: 15px;
+    }
+    #footer_para>p{
+        line-height: 20px;
+    }
+    #footer_terms{
+        width: 40%;
+        margin-bottom: 20px;
+      
+       
+    }
+
 }
