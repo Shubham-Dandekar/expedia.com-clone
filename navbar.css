@@ -15,6 +15,7 @@
 }
 
 #logo {
+  display: inline;
   margin-left: 70px;
   margin-right: 15px;
   width: 126px;
@@ -58,6 +59,8 @@
   margin-top: 13px;
   border-radius: 7px;
   background: white;
+  position: absolute;
+  z-index: 2;
 }
 
 #navbar ul li:hover #submenu ul {
@@ -82,9 +85,9 @@
 
 #menu {
   display: flex;
-  justify-content: space-between;
-  width: 32%;
-  margin-left: 500px;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 72%;
 }
 
 #menu a {

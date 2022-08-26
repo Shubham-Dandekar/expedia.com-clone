@@ -12,6 +12,7 @@
       href="https://www.expedia.com/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="popup.css" />
@@ -93,7 +94,15 @@
         <div><a href="#">List your property</a></div>
         <div><a href="#">Support</a></div>
         <div><a href="#">Trips</a></div>
-        <div><a href="#">Sign in</a></div>
+        <div>
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/material-sharp/20/000000/bell.png"
+          /></a>
+        </div>
+        <div>
+          <a href="signin.html">Sign in</a>
+        </div>
       </div>
     </div>
     <div id="pop-up">
@@ -123,10 +132,364 @@
         <button onclick="closepopup()">Save</button>
       </form>
     </div>
-    <div id="footer">
+    <div id="banner-1">
+      <div class="color-overlay"></div>
+      <div id="content-1">
+        <h1>Members get last minute summer savings</h1>
+        <p>
+          Plan a last-minute summer getaway with Member Prices of 10% off or
+          more on select hotels.
+        </p>
+        <button>See member deals</button>
+      </div>
+    </div>
+    <div id="banner-2">
+      <h1>Here to help keep you on the move</h1>
+      <div id="cards">
+        <div>
+          <div>
+            <h3>Change or cancel a trip</h3>
+            <p>Make updates to your itinerary or cancel a booking</p>
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/external-others-inmotus-design/30/000000/external-Pen-result-others-inmotus-design.png"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>Use a credit or coupon</h3>
+            <p>Apply a coupon code or credit to a new trip</p>
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/000000/cheap-2.png"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>Track your refund</h3>
+            <p>Check the status of a refund currently in progress</p>
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/external-others-inmotus-design/30/000000/external-Message-round-icons-others-inmotus-design-10.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="banner-3">
+      <div>
+        <img
+          src="https://a.travel-assets.com/travel-assets-manager/ceorg-1424/POSa-HP-Edi-3UP-384x256px.jpg"
+        />
+        <p>SUMMER IS A BUZZ IN THE CITY</p>
+        <p>Plan a city getaway with member-only deals on select hotels</p>
+      </div>
+      <div>
+        <img
+          src="https://a.travel-assets.com/travel-assets-manager/ceorg-1514/HP-Edi-3UP-384x256px.jpg"
+        />
+        <p>GET MORE TO GO MORE</p>
+        <p>Members can double dip with points on top of airline miles</p>
+      </div>
+      <div>
+        <img
+          src="https://a.travel-assets.com/travel-assets-manager/cmct-4898/HP-Editorial-3up-384x256.jpg"
+        />
+        <p>YOUR WEEKEND JUST GOT BETTER</p>
+        <p>Save on these last-minute weekend getaways.</p>
+      </div>
+    </div>
+    <div id="banner-4">
+      <div>
+        <img
+          src="https://a.travel-assets.com/travel-assets-manager/cmct-5183/US-CA-MX-HP-Editorial-2up-457x257.jpg"
+        />
+        <p>BROADEN YOUR HORIZONS</p>
+        <p>There's a whole lot of world out there—go see more of it</p>
+      </div>
+      <div>
+        <img
+          src="https://a.travel-assets.com/travel-assets-manager/cmct-4862/POSa-HP-Editorial-2up-457x257-No01.jpg"
+        />
+        <p>YOUR BEACH BLISS AWAITS</p>
+        <p>Experience ultimate relaxation with a coastal getaway</p>
+      </div>
+    </div>
+    <div id="banner-5">
       <img
-        src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+        src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg"
       />
+      <div>
+        <h1>Our app takes you further</h1>
+        <p>
+          When you book on the app you can save up to 25% on select hotels while
+          earning double the points with every booking. With these app deals
+          you'll save even more on trips, and that means you can take more
+          trips, and manage it all on the go.
+        </p>
+        <h3>Text yourself a download link for easy access</h3>
+        <div>
+          <select id="country-code">
+            <option value="">India +91</option>
+          </select>
+          <input type="number" id="number" placeholder="Phone number" />
+          <button>Get the app</button>
+        </div>
+        <p>
+          By providing your number, you agree to receive a one-time automated
+          text message with a link to get the app. Standard text message rates
+          may apply.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_HP.png"
+        />
+        <h5>Scan the QR code</h5>
+      </div>
+    </div>
+    <div id="banner-6">
+      <div><div>Be inspired and discover more with Expedia</div></div>
+      <div>
+        <div>
+          <h3>Hotel deals on top domestic destinations</h3>
+          <div>
+            <a href="#">Hotels</a>
+            <a href="#">Las Vegas hotels</a>
+            <a href="#">New York hotels</a>
+            <a href="#">Orlando hotels</a>
+            <a href="#">Miami hotels</a>
+            <a href="#">Los Angeles hotels</a>
+            <a href="#">Chicago hotels</a>
+            <a href="#">Nashville hotels</a>
+            <a href="#">Myrtle Beach hotels</a>
+            <a href="#">New Orleans hotels</a>
+            <a href="#">Key West hotels</a>
+            <a href="#">San Francisco hotels</a>
+          </div>
+        </div>
+        <div>
+          <h3>Book hotels internationally</h3>
+          <div>
+            <a href="#">Cabo San Lucas hotels</a>
+            <a href="#">London hotels</a>
+            <a href="#">Paris hotels</a><a href="#">Barcelona hotels</a>
+            <a href="#">Cancun hotels</a><a href="#">Dubai hotels</a>
+            <a href="#">Tokyo hotels</a><a href="#">San Juan hotels</a>
+            <a href="#">Los Cabos hotels</a><a href="#">Riviera Maya hotels</a>
+          </div>
+        </div>
+        <div>
+          <h3>Top Domestic Flights</h3>
+          <div>
+            <a href="#">Flights to Las Vegas</a>
+            <a href="#">Flights to Hawaii</a>
+            <a href="#">Flights to New York</a>
+            <a href="#">Flights to Orlando</a>
+            <a href="#">Flights to Miami</a>
+            <a href="#">Flights to Los Angeles</a>
+            <a href="#">Flights to Maui</a>
+            <a href="#">Flights to Houston</a>
+            <a href="#">Flights to Dallas</a>
+            <a href="#">Flights to Denver</a>
+          </div>
+        </div>
+        <div>
+          <h3>Top International Flights</h3>
+          <div>
+            <a href="#">Flights to Puerto Rico</a>
+            <a href="#">Flights to Tokyo</a>
+            <a href="#">Flights to Kannur</a>
+            <a href="#">Flights to Mexico City</a>
+            <a href="#">Flights to London</a>
+            <a href="#">Flights to Cancun</a>
+            <a href="#">Flights to Manila</a>
+            <a href="#">Flights to Cabo San Lucas</a>
+            <a href="#">Flights to Bali</a>
+            <a href="#">Flights to Bora Bora</a>
+          </div>
+        </div>
+        <div>
+          <h3>Save today on vacation packages</h3>
+          <div>
+            <a href="#">Las Vegas vacation packages</a>
+            <a href="#">Hawaii vacation packages</a>
+            <a href="#">New York vacation packages</a>
+            <a href="#">Miami vacation packages</a>
+            <a href="#">Disneyland vacation packages</a>
+            <a href="#">Florida vacation packages</a>
+            <a href="#">Orlando vacation packages</a>
+            <a href="#">New Orleans vacation packages</a>
+            <a href="#">Key West vacation packages</a>
+            <a href="#">Maui vacation packages</a>
+          </div>
+        </div>
+        <div>
+          <h3>Book international flights & hotels together to save</h3>
+          <div>
+            <a href="#">Cancun vacation packages</a>
+            <a href="#">Punta Cana vacation packages</a>
+            <a href="#">Aruba vacation packages</a>
+            <a href="#">Europe vacation packages</a>
+            <a href="#">Caribbean vacation packages</a>
+            <a href="#">Bahamas vacation packages</a>
+            <a href="#">Italy vacation packages</a>
+            <a href="#">London vacation packages</a>
+            <a href="#">Turks and Caicos vacation packages</a>
+            <a href="#">Paris vacation packages</a>
+          </div>
+        </div>
+        <div>
+          <h3>Top places to visit domestically</h3>
+          <div>
+            <a href="#">Visit Los Angeles</a>
+            <a href="#">Visit Las Vegas</a>
+            <a href="#">Visit New York</a>
+            <a href="#">Visit Chicago</a>
+            <a href="#">Visit Orlando</a>
+            <a href="#">Visit Dallas</a>
+            <a href="#">Visit Atlanta</a>
+            <a href="#">Visit Phoenix</a>
+            <a href="#">Visit Miami</a>
+            <a href="#">Visit Houston</a>
+          </div>
+        </div>
+        <div>
+          <h3>Visit places internationally</h3>
+          <div>
+            <a href="#">Visit the Bahamas</a>
+            <a href="#">Visit Vancouver</a>
+            <a href="#">Visit Mexico</a>
+            <a href="#">Visit Cabo San Lucas</a>
+            <a href="#">Visit Cancun</a>
+            <a href="#">Visit Punta Cana</a>
+            <a href="#">Visit Australia</a>
+            <a href="#">Visit London</a>
+            <a href="#">Visit Aruba</a>
+            <a href="#">Visit Paris</a>
+          </div>
+        </div>
+        <div>
+          <h3>Airport & car rental deals</h3>
+          <div>
+            <a href="#">Car rentals in Los Angeles</a>
+            <a href="#">Car rentals in Orlando</a>
+            <a href="#">Car rentals in Las Vegas</a>
+            <a href="#">Car rentals in Denver</a>
+            <a href="#">Car rentals in Phoenix</a>
+            <a href="#">Car rentals in Chicago</a>
+            <a href="#">Car rentals in Fort Lauderdale</a>
+            <a href="#">Car rentals in New York</a>
+            <a href="#">Car rentals in Atlanta</a>
+            <a href="#">Car rentals in Houston</a>
+          </div>
+        </div>
+        <div>
+          <h3>Find cheap car rentals at international airports</h3>
+          <div>
+            <a href="#">Car rentals in Dublin</a>
+            <a href="#">Car rentals in Vancouver</a>
+            <a href="#">Car rentals in Toronto</a>
+            <a href="#">Car rentals in Toronto</a>
+            <a href="#">Car rentals in Dubai</a>
+            <a href="#">Car rentals in Paris</a>
+            <a href="#">Car rentals in Cancun</a>
+            <a href="#">Car rentals in Puerto Rico</a>
+            <a href="#">Car rentals in Rome</a>
+            <a href="#">Car rentals in Calgary</a>
+          </div>
+        </div>
+        <div>
+          <h3>Top Vacation Rental Destinations</h3>
+          <div>
+            <a href="#">Vacation Rentals</a>
+            <a href="#">United States Vacation Rentals</a>
+            <a href="#">Florida Vacation Rentals</a>
+            <a href="#">Vacation Rentals in North Carolina</a>
+            <a href="#">Vacation Rentals in South Carolina</a>
+            <a href="#">Outer Banks Vacation Rentals</a>
+            <a href="#">Myrtle Beach Vacation Rentals</a>
+            <a href="#">Destin Vacation Rentals</a>
+            <a href="#">Panama City Vacation Rentals</a>
+            <a href="#">Hilton Head Vacation Rentals</a>
+            <a href="#">Gulf Shores Vacation Rentals</a>
+            <a href="#">Key West Vacation Rentals</a>
+            <a href="#">Maui Vacation Rentals</a>
+            <a href="#">Orlando Vacation Rentals</a>
+            <a href="#">Pigeon Forge Vacation Rentals</a>
+            <a href="#">Anna Maria Island vacation rentals</a>
+            <a href="#">Lake of the Ozarks Vacation Rentals</a>
+            <a href="#">Vacation Rentals by the beach</a>
+            <a href="#">Luxury vacation rentals</a>
+            <a href="#">Vacation rentals near by</a>
+          </div>
+        </div>
+        <div>
+          <h3>Popular cruise destinations</h3>
+          <div>
+            <a href="#">Cruises to Bahamas</a>
+            <a href="#">Cruises to Mexico</a>
+            <a href="#">Cruises to Hawaii</a>
+            <a href="#">Cruises to Alaska</a>
+            <a href="#">Cruises to Caribbean</a>
+            <a href="#">Cruises to Europe</a>
+            <a href="#">Cruises to Bermuda</a>
+            <a href="#">Cruises to Africa</a>
+            <a href="#">Cruises to Australia & New Zealand</a>
+            <a href="#">Cruises to Canada & New England</a>
+          </div>
+        </div>
+        <div>
+          <h3>Cruise departure ports nearby</h3>
+          <div>
+            <a href="#">Cruises from Galveston</a>
+            <a href="#">Cruises from Miami</a>
+            <a href="#">Cruises from New York</a>
+            <a href="#">Cruises from Tampa</a>
+            <a href="#">Cruises from Long Beach</a>
+            <a href="#">Cruises from Boston</a>
+            <a href="#">Cruises from Charleston</a>
+            <a href="#">Cruises from Port Canaveral</a>
+            <a href="#">Cruises from San Francisco</a>
+            <a href="#">Cruises from Norfolk</a>
+          </div>
+        </div>
+        <div>
+          <h3>Other Vacation ideas</h3>
+          <div>
+            <a href="#">4th of July Getaways Deals</a>
+            <a href="#">Labor Day Getaways Deals</a>
+            <a href="#">Weekend Getaways</a>
+            <a href="#">Plan your Vacation</a>
+            <a href="#">Vacation Deposit and Payment Plan</a>
+            <a href="#">Expedia Group wildlife guidelines</a>
+            <a href="#">All Inclusive Vacations</a>
+            <a href="#">Ski Vacations</a>
+            <a href="#">Beach Vacations</a>
+            <a href="#">Golf Vacations</a>
+            <a href="#">Kid Friendly Vacations</a>
+            <a href="#">Luxury Vacations</a>
+            <a href="#">Romantic Vacations</a>
+            <a href="#">Adventure Vacations</a>
+          </div>
+        </div>
+        <div>
+          <h3>More destinations</h3>
+          <div><a href="#">All Destinations</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+        <img
+          src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+        />
+      </div>
       <div>
         <p>Company</p>
         <ul>

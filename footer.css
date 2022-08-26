@@ -1,14 +1,10 @@
 #footer {
   display: flex;
-  gap: 50px;
-  width: 92%;
+  justify-content: space-between;
+  width: 85%;
   margin: auto;
   border-bottom: 1px solid rgb(194, 194, 194);
   padding-bottom: 20px;
-}
-
-#footer > img {
-  margin-top: -210px;
 }
 
 #footer ul li {
