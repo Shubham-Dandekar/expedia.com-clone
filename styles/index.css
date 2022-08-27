@@ -41,7 +41,7 @@
   gap: 10px;
 }
 
-button {
+#searchbox button {
   width: 20%;
   padding: 10px;
   display: block;
@@ -54,7 +54,7 @@ button {
   margin-top: 30px;
 }
 
-button:hover {
+#searchbox button:hover {
   cursor: pointer;
 }
 
@@ -166,7 +166,18 @@ input[type="date"] {
   grid-template-columns: repeat(3, 1fr);
 }
 
-#banner-3 > div:hover,
+#banner-3 a {
+  text-decoration: none;
+}
+
+#banner-3 a :nth-child(2) {
+  color: grey;
+}
+
+#banner-3 a :last-child {
+  color: black;
+}
+
 #banner-4 > div:hover {
   cursor: pointer;
 }
@@ -239,6 +250,10 @@ input[type="date"] {
 #banner-5 select {
   width: 31%;
   border: 1px solid rgb(194, 194, 194);
+}
+
+#banner-5 select {
+  margin-right: 10px;
 }
 
 #banner-5 input,

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels: Search Cheap Hotels, Deals, Discounts, Accommodations &amp; Reservations | Expedia site</title>
+    <link
+    rel="shortcut icon"
+    href="https://www.expedia.com/favicon.ico"
+    type="image/x-icon"
+  />
+    <style>
+        #container{
+            width: 80%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #stast_text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 550;
+        }
+        #search{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            gap: 20px;
+            border: 5px;
+            margin-top: -15px;
+        }
+        #search>div{
+            width: 30%;
+            height: 80%;
+            display: flex;
+            position: relative;
+          
+        }
+        #search>div:nth-child(4){
+          
+            width: 30px;
+            margin-top: -8px;
+            margin-left: -20px;
+
+        }
+        #search>div:nth-child(4)>img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+           
+        }
+        .option{
+            margin-top: 5px;
+            height: 250px;
+            border: 1px solid red;
+            overflow: auto;
+        }
+        .option::-webkit-scrollbar{
+            width: 7px;
+        }
+        .option li{
+          border-radius: 5px;
+          background-color: aqua;
+          height: 50px;
+          cursor: pointer;
+          align-items: center;
+        }
+        .sorry{
+            display: none;
+        }
+        .from .active{
+            display: block;
+        }
+        .option li:hover{
+            background-color: white;
+        }
+        #search>div>input{
+            border-radius: 10px;
+            border: 0.5px solid black;
+            width: 95%;
+            outline: none;
+            padding-left: 40px;
+            font-size: 20px;
+        }
+        #search>div>img{
+            height: 70%;
+            width: 25px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: absolute;
+           
+        }
+
+        #marks{
+            margin-top: 10px;
+        }
+        #marks>img{
+            width: 20px;
+        }
+        #photoea{
+            display: flex;
+            width: 100%;
+            height: 400px;
+        }
+        #photoea>div:nth-child(1){
+            width: 55%;
+            border: 1px solid rgb(99, 97, 97);
+            border-radius: 5px;
+           
+        }
+        #photoea>div:nth-child(1)>img{
+            width: 100%;
+            height: 70%;
+            border-radius: 5px;  
+            
+            
+        }
+        .innerphoto{
+            border: 1px solid rgb(77, 75, 75);
+            display: flex;
+            width: 550px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+
+        
+        }
+        .innerphoto>div:nth-child(1){
+            width: 150px;
+            height: 170px;
+            border-radius: 10px;  
+        }
+        
+        .innerphoto>div>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;  
+            
+        }
+        .innerphoto>div>h2{
+          margin-top: 50px;
+           margin-left: 20px;
+        }
+        .innerphoto>div>p{
+           margin: auto;
+           margin-left: 20px;
+        }
+        #fixd{
+            display: flex;
+        }
+        #fixd>div>img{
+            width: 100px;
+            height: 50px;
+            margin-top: 20px;
+        }
+        #fixd>h3{
+            margin-left: 20px;
+        
+        }
+        #fixd>div:nth-child(2){
+            margin-left: 20px;
+        }
+        #term{
+            display: flex;
+            margin-top: -25px;
+        }
+        #blue{
+            color: blue;
+            text-decoration: underline;
+        }
+        #room_watch{
+            display: flex;
+            grid-template-columns: repeat(3,1fr);
+            justify-content:space-between;
+           
+           
+        }
+        #room_watch>div{
+          border: 1px solid rgb(8, 8, 8);
+          border-radius: 5px;
+          width: 30%;
+          height: 400px;
+        }
+        #room_watch>div>img{
+            width: 100%;
+            height: 59%;
+        }
+        #leftbtn{
+            font-size: 28px;
+            margin-left: 77%;
+            margin-top: 98px;
+            border: none;
+            position: absolute;
+            cursor: pointer;
+            background-color: white;
+        }
+        #rightbtn{
+            font-size: 28px;
+            border: none;
+            margin-top: 98px;
+            position: absolute;
+            cursor: pointer;
+            background-color: white;
+        }
+        #review{
+            display: flex;
+        }
+        .muenchen{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .munich{
+            font-size: 17px;
+            margin-top: -10px;
+        }
+       
+        .four{
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+        .rex{
+            margin-top: -10px;
+            margin-left: 5px;
+            font-size: 17px;
+        }
+        #line{
+            display: flex;
+        }
+        #lineone{
+            border: 0.5px solid rgb(3, 3, 3);
+            width: 78%;
+            height: 0px;
+            margin-top: 13px;
+        }
+        #textx{
+            border: 1px solid red;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(226, 177, 86);
+            
+        }
+        #middimg{
+            
+            width: 77%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #middimg>img{
+            width: 100%;
+        }
+        #hotstar{
+            display: flex;
+        }
+        #hotstar>div{
+          
+           height: 250px;
+          
+        }
+        #hotstar>div>img{
+            height: 100%;
+        }
+        #hotstar>div:nth-child(1){
+            width: 90%;
+            margin-right: 10px;
+        }
+        #hotstar>div>img{
+            width: 100%;
+        }
+        #divone{
+            border: 1px solid rgb(12, 12, 12);
+            width: 100%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            height: 300px;
+            display: flex;
+        }
+        #divone>div:nth-child(1){
+            width: 35%;
+            height: 100%;
+        }
+        #divone>div:nth-child(1)>img{
+            width: 100%;
+            height: 100%;
+        }
+        #phone{
+            display: flex;
+            gap: 20px;
+          
+        }
+        #phone>div>input{
+           height: 30px;
+           font-size: 20px;
+           width: 150px;
+           border: 10px;
+           border: 1px solid black;
+        }
+        #county{
+            margin-left: 20px;
+        }
+        #imgs{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        #imgs>img{
+            width: 200px;
+            height: 200px;
+        }
+        #textes{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+        }
+        #textes>div{
+            width: 49%;
+            height: 100%;
+        }
+        #textes>div>p{
+            margin-top: -10px;
+        }
+        #tope>p:nth-child(1){
+            margin-top: 10px;
+        }
+        #testt{
+            text-align: center;
+        }
+        #testt>p{
+            color: blue;
+            margin-top: -20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+        #testt>p:hover{
+            text-decoration: underline;
+        }
+        #bottompage{
+            display: flex;
+            grid-template-columns: repeat(5,1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+        #bottompage>div>img{
+            margin-top: 20px;
+            margin-right: 60px;
+            cursor: pointer;
+        }
+        #bottompage>div>h4{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        #bottompage>div>p{
+            color:blue;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+        #bottompage>div>p:hover{
+            text-decoration: underline;
+        }
+        #last_text{
+            text-align: center;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 40px;
+        }
+      
+               
+
+    </style>
+</head>
+<body>
+    <div id="container">
+         <div>
+            <p id="stast_text">Search stays</p>
+            <div id="search">
+                <div id="wareap">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAY1BMVEX///8AAAD5+fkrKytcXFz8/Pzu7u51dXUWFhbl5eXZ2dnBwcFXV1dTU1Pc3Ny8vLxvb2+QkJCurq5paWlOTk6Hh4fR0dGbm5tAQEDIyMihoaEyMjJ7e3s6Ojq0tLSoqKgdHR0xJnyrAAADMUlEQVRoge2abVfyMAyG6d6kA0RwMlBU/v+vFJDDHL3TtSQZz3lOr6/m9J40SZO0k0kikUgkEol/mczWmyO1zcZXnu3n29ycybfz/WzEb6jahXFYtNUo4rPC1f6lmKmLL3NK/LwPS1Xx58YnfqJ5VhMv2yHxE22po14Bh0MsVHzwOUz8hMIGzMLVjREPgWWMujHCEbCLUzdmJ6luY9WNsXLq2TRefip3CLzEqxvzIqX+dY+6MV8y6pU3zdPkMunn7T51Y94k1COy3S0S2e+JWny+2tmqsrvVnLJ44qtX1NJ1Z1NTn8jf/Xe47semb7X5gGbvbHm47t6128Ov5KpDx4MuDQOE63wrsOYrNn0FpiueeonKWiKbZ8C04FVeFThs1pTx2rWd8ny/dlf8pK0/Xeuatg4AnDbftPW3a807d4DneZwZhAnP91xvbjxlROZ2IUSUBOI6vreKcOuSQljee4q6qUda3ruZrqv8Z//9qHvvev7Ck0ZLtwnleT6Ie0//ALoRXtyDrEemfJj0eVkP5Pwtbb11rXk5H1V6ZPeMenDeiQfPe8L5SmDKPO9htUPEHuoEmdUO2nxiUfShzK0/AntroA/Vp1x1osNb3ES/xVMvfpdHDTZWfz7Awn/diIw4UP18/mGLdW2P1OuCGn7wMu4v1jNZOeT5gf7rVGS+89j+/tHTjQfPdtAxHoCvMIgDpr4h2Amvgxyw0AgMVq5QExYPokN90L358XSCd1AOXuL0aYRvVDZx8pvhFeOAoyMKMHpiEjNUFxymX4m4TlG5TAz2vkZDPXy2rHSRSdU0N3CrW4oMdDEuW7Wb/KDrNNErtD4BR4/kUXNLwNGj+oZhsPCRKnEIBoJfJ+Q7BoJf7+3CBW/wa4V8hy/49UK+w3Pyi5/yCLLrkelqhkCXJmdGejdFBL9yyHfAZ1O88WkMqOeW6abDADer/PvScErn0nqu9FQK4+Re9Wzb5+b1WDuu+mTSm+kcxlbvF16KBRbFn65Lvqcapps4Sc2Q4riO7/VfiEIuda9mbevjUvc+5Kc/cb468lwtadPo17Y+rOizwHja0bNtj2z0x/GJRCKRSCSi+QGv+R9DkcCx8AAAAABJRU5ErkJggg==" alt="">
+                    <input id="" type="text" placeholder="Going to">
+                    
+                </div>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAAaVBMVEX///8AAADGxsZCQkKOjo5+fn7z8/P29vbd3d2+vr7X19c9PT2cnJxlZWVvb29hYWHr6+tqamotLS0eHh60tLTPz89YWFilpaV3d3cZGRnj4+MJCQmUlJQnJyc3Nzerq6tQUFBJSUmGhoafSlO7AAAD3klEQVRoge2b6xqiIBCGQ0s0K63USjOz+7/I1TY5CYOwWdvz8P0rZng9wDCMulio5RWo0+0EmABqbr333bPzXpzQS3sb793gvbGCl4goMvfOqPfahn6l/om5d0G9lzb0lvofAlPn4Ea9fRs6439MTZ3TA3Psju7oji5VkIZ/hSX0cLIkdDy0parQkT786uWQj+kpmqqqHNPXpNF/SC8kE5mfoVmkX6bS6xSg98rG8A3b3tPj2ejjZS/nmvtFbUt/xt3NKis0UVV34zFz7PeuM483yQV6wrX2CcWJ/tyPDg9Uzh97f6YNbyEsmuWRa931E4D+lfMHo9OGO9nnhNnyFscSuPCoStkOrr1FPZ0ec+Oov4vpUTDhL71wX9DjeUFWSVEU52dmFk2HvwZ1fu6ck9XzLB+ihQfShWaDEf+UEFJGvevoR+7alK0RHMVcRFmPp4uGjlCDSWt0GzfDOtBEFDeSuaqlo3qZ5Z2ijW/K7uVvot47Wx5krXr6nHJ0R3d0R/8u3b8uZ1Otpa8Wswn736QHju7ojv7f0vHGV2krlD/Xe6XpleTGRnTcIkCR3F2i24A3ol9lXRGx1VMszZqJljZ0zb6R6UC3u7ag67ZuV+qt211b0AMNnXlk0cCWNnS2cCMTM+pD2PJgQ89kPREVmHEvQNPGhj7e8zOqudpHINYmWJ2JlVmsy08bhTLMuS9wprI80ULAL0VaR3f0b9BxoJCka4WYqWlGL3exSr5QY89apemWxCUjegpW6RrWHQzK9VA6NKKvoC7RhSlHYtCShFojumaFjWTeclnQddkF83hjhuwCT88u4LXYLrto4S5D6l3ClrENHb6b3KOVLWg6jBCz+Q6la3d+gYeSGzJADGNd6kUKhQtBocrSozPzt+K8ozv65+lYKbHnKZZm9DXwKOzKuUN7/ZhsJ4zo8N7wMRGO6IpgRIeDN2I2cgFsmdjQNSssk9npHlBb0L9bu9BlF/Oeu6YkwGYXmvte2NDXsp6IuPcV4TE/1FjM5runrtxcVny8WamLFzFJfg1jHV6rxL8z0qlUmtLD/K047+iO/nF64Kk0ejM7VJrSOocZPQNeqUv4aJOoLS+kzmBEh2v+Z9YdLjQMqJlWGc0bn60FXbfCMoWbGfbv380uvlu3WZzBHiumZqXJLvY29BJ8JMa9Ewte+mpYjs3me3hXdyl8RAPgWzI5firSOrqjO/oP0ye85XXYJqK2Mu1h7WQ6aumfkaMPgvfq7xefkacGn0W8QbXwvdBO7/JG7YS5qHmw82aNig9GH4X8oyTf1+Zmn4XY6yJ+p/Q6/fP8Y68+syf+BymsVIhKaCjRAAAAAElFTkSuQmCC" alt="">
+                    <input type="date" placeholder="Dates">
+                </div>
+
+                <div class="form active">
+                    <img src="data:image/png;base64,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" alt="">
+                    <input class="box" type="text" placeholder="Travelers">
+                    
+                </div>
+                <div id="newsear">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRNIcvc--Ye1cdGIWlDTPC_lZPGe8CS3MZ6A&usqp=CAU" alt="">
+               </div>
+                
+            </div>
+            <div id="marks">
+                <img src="data:image/png;base64,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" alt="">
+                Fully refundable on most hotels. Because flexibility matters.</div>  
+         </div>
+         <h1>Ideas for your next trip</h1>
+         <div id="photoea">
+            
+            <div>
+                 <img src="https://images.trvl-media.com/hotels/2000000/1780000/1773500/1773497/237a9aa2_b.jpg" alt="">
+                 <div id="fixd">
+                    <div><img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/20/123456_V1_logo_150x50_25973_RosewoodHotels.png" alt=""></div>
+                    <div>
+                        <h3>Dive into summer with Resewood Hotels and Resorts</h3>
+                         <p>Travel overseas & enjoy deals from Marriott Bonvoyn hotels in the Philippines</p> 
+                    </div>
+
+                   
+                </div>
+                </div>
+            <div>
+                <div class="innerphoto">
+                    <div><img src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/09/305339_V4_900x506_30415_ThailandAmazingNewChapter.png?impolicy=fcrop&w=900&h=506&q=mediumHigh" alt=""></div>
+                    <div>
+                        <h2>Discover Thiland</h2>
+                        <p>The best days are ahead.</p>
+                    </div>
+                </div>
+                <div class="innerphoto">
+                    <div><img src="https://resources.discover-canada.ca.expedia.pulselive.com/photo-resources/2021/08/02/fcdb2b5b-0f04-4bc2-bee2-5d94f85ee33b/Hiking_Lake_Louise_Lake_Agnes_Tea_House_Paul_Zizka_4_Horizontal-custom.jpeg?width=398&height=515" alt=""></div>
+                    <div>
+                        <h2>Refresh your view in Canada</h2>
+                        <p>Get away from the familiar to find fresh perspectives</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <h1>Save on stays this Oktoberfest</h1>
+        <div id="term"><p>Munich's diverse food and beer scene tastes even better knowing you've saved more as a Member.<p id="blue">Terms and conditions</p></p></div>
+        <div id="room_watch">
+           <div>
+            <img src="https://images.trvl-media.com/hotels/69000000/68090000/68083300/68083243/b961ddd5_b.jpg" alt="">
+            <p class="muenchen">FourSide Muenchen</p>
+                    <p class="munich">Munich</p>
+                    <div id="review">
+                        <p class="four">4.2/5</p>
+                        <p class="rex">(45 reviews)</p>
+                    </div>
+            <div id="line">
+                <div id="lineone"></div>
+                <div id="textx">10% Off</div>
+            </div>
+        </div>
+           <div>
+            <img src="https://images.trvl-media.com/hotels/1000000/910000/905700/905648/1f700811_b.jpg" alt="">
+            <p class="muenchen">FourSide Muenchen</p>
+                    <p class="munich">Munich</p>
+                    <div id="review">
+                        <p class="four">4.2/5</p>
+                        <p class="rex">(45 reviews)</p>
+                    </div>
+            <div id="line">
+                <div id="lineone"></div>
+                <div id="textx">10% Off</div>
+            </div>
+        </div>
+           <div>
+            <img src="https://images.trvl-media.com/hotels/1000000/970000/966300/966253/bd23cffd_b.jpg" alt="">
+            <p class="muenchen">FourSide Muenchen</p>
+                    <p class="munich">Munich</p>
+                    <div id="review">
+                        <p class="four">4.2/5</p>
+                        <p class="rex">(45 reviews)</p>
+                    </div>
+            <div id="line">
+                <div id="lineone"></div>
+                <div id="textx">10% Off</div>
+            </div>
+            
+        </div>
+         
+            
+            
+           
+            <button id="leftbtn">></button>
+            <button id="rightbtn"><</button>
+        </div>
+        <div id="middimg">
+            <img src="https://tpc.googlesyndication.com/simgad/13624514771375802028?" alt="">
+        </div>
+        <h1>Explore, discover, and save</h1>
+        <div id="hotstar">
+            <div>
+                <img src="https://mesocp.azureedge.net/media/8d84bd674e7212c/120-krabi-raile-beach-580452ss.jpg?anchor=center&mode=crop&width=605&height=907&v=8-29-20204:46:14AM&quality=85" alt="">
+            </div>
+            <div>
+               <img src="https://s0.2mdn.net/simgad/5641897871829991053" alt="">
+            </div>
+        </div>
+        <div id="divone">
+            <div><img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt=""></div>
+            <div id="county" >
+                <h2>Our app takes you further</h2>
+                <p>When you book on the app you can save up to 25% on select hotels while earning <br> double the points with every booking. With these app deals you'll save even more on <br> trips, and that means you can take more trips, and manage it all on the go.</p>
+                <h3>Text yourself a download link for easy access</h3>
+                <div id="phone">
+                    <div><input type="text"></div>
+                    <div><input type="text"></div>
+                    <div><input type="text"></div>
+                </div>
+                <p>By providing your number, you agree to receive a one-time automated text  message <br> with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+            <div id="imgs">
+                 <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_BNA_HP.png" alt="">
+              <h2>Scan the QR code</h2>
+            </div>
+        </div>
+        <div id="textes">
+            <div>
+                <h3>Tips for Booking a Hotel </h3>
+                <p>Booking the right hotel is one of the most important factors when it comes to getting the most out of your vacation. Learn how to find the ultimate booking and discover what to look for in your hotel.</p>
+                <h3>How to book a hotel?</h3>
+                <p>When you book through Expedia, the entire process is simple. You'll find a wide range of accommodation options and destinations to choose from, as well as a variety of search filters to help you find exactly what you're looking for. That means you can search exclusively for hotels with a pool, pet-friendly policies, or family-friendly amenities. Las Vegas hotels and New York hotels are especially popular, but you'll also find options for other destinations like Myrtle Beach.</p>
+                <h3>What are the most important things when choosing a hotel?</h3>
+                <p>Finding the right hotel means opting for stays that cater to your unique needs. Quite a few factors go into what a hotel is like to experience, and you'll need to consider them all. Think about what kind of amenities you need to have. You'll find options for pools and fitness centers in hotels all across the country and beyond. The location can also play a major role in your experience, especially if you want to be close to certain attractions like downtown or the beach. Additionally, you'll want to find a balance between affordability and positive reviews to get as much as you can within the budget you've set.</p>
+                <h3>How far in advance should I book a hotel?</h3>
+                <p>You can sometimes book a hotel as late as the day before check-in, but most of the time, you'll want to book well in advance. You can see what's available up to 40 days in advance, and even monitor the price trends if you're not ready to book right away. Prices tend to go down the closer it gets to the date, especially around the 21-day mark. 21 days from your check-in, prices are generally somewhat normal, with prices often falling, then briefly rising,</p>
+            </div>
+            <div id="tope">
+                <p >then falling again. Last-minute bookings can be especially cheap since hotels are desperate to book their last few rooms.</p>
+                <h3>How can I find the cheapest hotels?</h3>
+                <p>To find the cheapest hotel rooms, you'll need to consider several factors that affect the price. The time of year you visit can play a major role in price, with the off-season tending to be cheaper overall. Hotels with lower star ratings are going to be more affordable as well. Additionally, you'll find cheaper options in less popular neighborhoods, which can be an easy way to save since a lot of cheap neighborhoods in popular destinations are located right next to the hot spots. Keep in mind, however, that these are general trends rather than strict rules.</p>
+                <h3>How can I find some of the best deals on hotels?</h3>
+                <p>If you're looking for the best hotel deals, you'll want to implement several filters into your search. You can sort your results by price so that the cheapest options are automatically put at the top of the list. Then, adjust your filters to match your budget, and whether or not you want to only include fully refundable properties. If you become a member, you'll find even more hotel discounts.</p>
+                <h3>Why should I book a hotel with Expedia?</h3>
+                <p>When you book with Expedia, planning the ultimate vacation is easier than ever. Not only will you be able to find a hotel for your trip, but we can take care of your flight as well, with the potential for additional savings if you book your flight and your stay together. Plus, you'll find flexible cancellation policies on numerous hotels along with opportunities for booking on short notice. You can become an Expedia member for free and enjoy even more discounts.</p>
+                <h3>Are hotels fully refundable on Expedia?</h3>
+                <p>Some hotels offer flexible cancellation policies when you book with Expedia. You'll be able to see on the results page which hotels in your search are fully refundable, as each that qualifies will be marked with "fully refundable" in green letters. Additionally, you can set the 'fully refundable' filter when searching to only show results that offer flexible cancellation policies.</p>
+            </div>
+        </div>
+        <div id="testt">
+            <h4>Explore a world of travel with Expedia</h4>
+            <p>Discover new places and experiences</p>
+        </div>
+        <div id="bottompage">
+            <div>
+                <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+            </div>
+            <div>
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Jobs</p>
+                <p>List your property</p>
+                <p>Partnerships</p>
+                <p>Newsroom</p>
+                <p>Investor Relations</p>
+                <p>Advertising</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p>United States of America travel guide</p>
+                <p>Hotels in United States of America</p>
+                <p>Vacation rentals in United states of  </p>
+                <p>Vacation packages in United States of America</p>
+                <p>Domestic flights</p>
+                <p>Car rentals in United States of America</p>
+                <p>All accommodation types</p>
+            </div>
+            <div>
+                <h4>Policies</h4>
+                <p>Privcy policy</p>
+                <p>Terms of use</p>
+                <p>Vrbo terms and condition</p>
+                <p>Expedia Rewards Terms</p>
+                <p>Accessibility</p>
+                <p>Do not sell my personal information.</p>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <p>Cancel your hotel  or vacation rental booking</p>
+                <p>Cancel your flight</p>
+                <p>Refund timelines,,Policies & process</p>
+                <p>Use an Expedia coupon</p>
+                <p>international travel documnets</p>
+            </div>
+        </div>
+        <hr>
+        <div id="last_text">
+            <p>Expedia, Inc. is not responsible for content on external Web sites.</p>
+            <p>© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc. CST# 2029030-50.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+    let image_url=[
+      "https://images.trvl-media.com/hotels/3000000/2960000/2953000/2952981/39734ddc_b.jpg",
+      "https://images.trvl-media.com/hotels/1000000/10000/4700/4605/e78764c9_b.jpg",
+      "https://images.trvl-media.com/hotels/69000000/68090000/68083300/68083243/b961ddd5_b.jpg",
+      "https://images.trvl-media.com/hotels/1000000/910000/905700/905648/1f700811_b.jpg",
+      "https://images.trvl-media.com/hotels/1000000/970000/966300/966253/bd23cffd_b.jpg",
+    ]
+    let leftbtn=document.getElementById("leftbtn").addEventListener("click",leftbt)
+    let rightbtn=document.getElementById("rightbtn").addEventListener("click",rightbt)
+    let imglist=3;
+    function leftbt(){
+        imglist++
+        if(imglist==image_url.length){
+            imglist=3
+        }
+        imgesas.src=image_url[imglist]
+    }
+    function rightbt(){
+        imglist--
+        if(imglist<3){
+            imglist=image_url.length-1
+        }
+        imgesas.src=image_url[imglist]
+    }
+</script>
+<script>
+    const form=document.querySelector(".form")
+    const box=document.querySelector(".box")
+    const sorry=document.querySelector(".box")
+
+    form.addEventListener("click",()=>{
+        sorry.classList.toggle("active")
+    })
+
+</script>

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheap Flights, Plane Tickets &amp; Airline Deals - Expedia</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.expedia.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      #container {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #stast_text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 550;
+      }
+      #search {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        gap: 20px;
+        border: 5px;
+        margin-top: -15px;
+      }
+      #search > div:nth-child(1) {
+        width: 30%;
+        height: 80%;
+
+        display: flex;
+        position: relative;
+      }
+      #search > div:nth-child(2) {
+        width: 20px;
+        height: 80%;
+        margin-left: -20px;
+        display: flex;
+        position: relative;
+      }
+      #search > div:nth-child(3) {
+        width: 30%;
+        height: 80%;
+
+        display: flex;
+        position: relative;
+      }
+      #search > div:nth-child(4) {
+        width: 15%;
+
+        height: 80%;
+
+        display: flex;
+        position: relative;
+      }
+      #search > div:nth-child(5) {
+        width: 15%;
+        height: 80%;
+
+        display: flex;
+        position: relative;
+      }
+      #search > div > input {
+        border-radius: 10px;
+        border: 0.5px solid black;
+        width: 95%;
+        outline: none;
+        padding-left: 40px;
+        font-size: 20px;
+      }
+      #search > div > img {
+        height: 70%;
+        width: 25px;
+        margin-top: 5px;
+        margin-left: 10px;
+        position: absolute;
+      }
+      #ser {
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+      #ser > h2 {
+        margin: auto;
+        padding-top: 8px;
+      }
+      #marks {
+        margin-top: 10px;
+      }
+      #marks > img {
+        width: 20px;
+      }
+      #photoea {
+        display: flex;
+        width: auto;
+        height: auto;
+      }
+      #photoea > div:nth-child(1) {
+        height: auto;
+        border: 1px solid rgb(99, 97, 97);
+        border-radius: 5px;
+      }
+      #photoea > div:nth-child(1) > img {
+        width: 100%;
+        height: 75%;
+        border-radius: 5px;
+      }
+      .innerphoto {
+        border: 1px solid rgb(77, 75, 75);
+        display: flex;
+        width: 550px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+      }
+      .innerphoto > div:nth-child(1) {
+        width: 150px;
+        height: 170px;
+        border-radius: 10px;
+      }
+
+      .innerphoto > div > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+      .innerphoto > div > h2 {
+        margin-top: 50px;
+        margin-left: 20px;
+      }
+      .innerphoto > div > p {
+        margin: auto;
+        margin-left: 20px;
+      }
+      #six_img {
+        display: flex;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+      }
+      #six_img > div {
+        position: relative;
+        border-radius: 10px;
+        border: 00.5px solid black;
+      }
+      #six_img > div > h3 {
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 15px;
+        font-size: 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      #six_img > div > img {
+        width: 100%;
+        height: 100%;
+        transition: all;
+        box-shadow: black;
+        border-radius: 10px;
+      }
+      #three_img {
+        display: flex;
+        justify-content: space-between;
+      }
+      #three_img > div > p {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #three_img > div > h3 {
+        font-size: 18px;
+      }
+      #fixd {
+        display: flex;
+      }
+      #fixd > div > img {
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+      }
+      #fixd > h3 {
+        margin-left: 20px;
+      }
+      #fixd > div:nth-child(2) {
+        margin-left: 20px;
+      }
+      #term {
+        display: flex;
+        margin-top: -25px;
+      }
+      #blue {
+        color: blue;
+        text-decoration: underline;
+      }
+      #room_watch {
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+      }
+      #room_watch > div {
+        border: 1px solid rgb(8, 8, 8);
+        border-radius: 5px;
+        width: 30%;
+        height: 400px;
+      }
+      #room_watch > div > img {
+        width: 100%;
+        height: 59%;
+      }
+      #leftbtn {
+        font-size: 28px;
+        margin-left: 77%;
+        margin-top: 98px;
+        border: none;
+        position: absolute;
+        cursor: pointer;
+        background-color: white;
+      }
+      #rightbtn {
+        font-size: 28px;
+        border: none;
+        margin-top: 98px;
+        position: absolute;
+        cursor: pointer;
+        background-color: white;
+      }
+      #review {
+        display: flex;
+      }
+      .muenchen {
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .munich {
+        font-size: 17px;
+        margin-top: -10px;
+      }
+      .four {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: -10px;
+      }
+      .rex {
+        margin-top: -10px;
+        margin-left: 5px;
+        font-size: 17px;
+      }
+      #line {
+        display: flex;
+      }
+      #lineone {
+        border: 0.5px solid rgb(3, 3, 3);
+        width: 52%;
+        height: 0px;
+        margin-top: 13px;
+      }
+      #textx {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: rgb(226, 177, 86);
+      }
+      #middimg {
+        width: 77%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #middimg > img {
+        width: 100%;
+      }
+      #hotstar {
+        display: flex;
+        margin-top: 30px;
+      }
+      #hotstar > div {
+        height: 250px;
+      }
+      #hotstar > div > img {
+        height: 100%;
+        border-radius: 10px;
+      }
+      #hotstar > div:nth-child(1) {
+        width: 90%;
+        margin-right: 10px;
+      }
+      #hotstar > div > img {
+        width: 100%;
+      }
+      #divone {
+        border: 0.5px solid rgb(12, 12, 12);
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
+        height: 300px;
+        display: flex;
+      }
+      #divone > div:nth-child(1) {
+        width: 35%;
+        height: 100%;
+      }
+      #divone > div:nth-child(1) > img {
+        width: 100%;
+        height: 100%;
+      }
+      #phone {
+        display: flex;
+        gap: 20px;
+      }
+      #phone > div > input {
+        height: 30px;
+        font-size: 20px;
+        width: 150px;
+        border: 10px;
+        border: 1px solid black;
+      }
+      #county {
+        margin-left: 20px;
+      }
+      #imgs {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      #imgs > img {
+        width: 200px;
+        height: 200px;
+      }
+      #textes {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+      }
+      #textes > div {
+        width: 49%;
+        height: 100%;
+      }
+      #textes > div > p {
+        margin-top: -10px;
+      }
+      #tope > p:nth-child(1) {
+        margin-top: 10px;
+      }
+      #testt {
+        text-align: center;
+      }
+      #testt > p {
+        color: blue;
+        margin-top: 20px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+      }
+      #smallser {
+        font-size: 13px;
+      }
+      #testt > p:hover {
+        text-decoration: underline;
+      }
+      #bottompage {
+        display: flex;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        margin-top: 20px;
+      }
+      #bottompage > div > img {
+        margin-top: 20px;
+        margin-right: 60px;
+        cursor: pointer;
+      }
+      #bottompage > div > h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+      #bottompage > div > p {
+        color: blue;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+      }
+      #bottompage > div > p:hover {
+        text-decoration: underline;
+      }
+      #last_text {
+        text-align: center;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+      }
+      #scroller {
+        border: 1px solid rgb(7, 6, 6);
+        height: 300px;
+        margin-top: 40px;
+        border-radius: 7px;
+        position: relative;
+      }
+      #scroller > h2 {
+        margin-left: 10px;
+      }
+      #scroller > p {
+        margin-left: 20px;
+        color: blue;
+      }
+      #scroll {
+        display: flex;
+        width: 100%;
+        height: 180px;
+        display: flex;
+        overflow-y: scroll;
+      }
+      #liness {
+        width: 25%;
+        border: 1px solid rgb(15, 47, 225);
+        margin-left: 10px;
+        position: absolute;
+      }
+      #scroll > div:nth-child(1) {
+        margin-left: 20px;
+      }
+      #scroll > div:nth-child(2) {
+        margin-left: 500px;
+      }
+      #scroll > div > p {
+        color: blue;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+      }
+      #scroll > div > p:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <p id="stast_text">Search flights</p>
+        <div id="search">
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAY1BMVEX///8AAAD5+fkrKytcXFz8/Pzu7u51dXUWFhbl5eXZ2dnBwcFXV1dTU1Pc3Ny8vLxvb2+QkJCurq5paWlOTk6Hh4fR0dGbm5tAQEDIyMihoaEyMjJ7e3s6Ojq0tLSoqKgdHR0xJnyrAAADMUlEQVRoge2abVfyMAyG6d6kA0RwMlBU/v+vFJDDHL3TtSQZz3lOr6/m9J40SZO0k0kikUgkEol/mczWmyO1zcZXnu3n29ycybfz/WzEb6jahXFYtNUo4rPC1f6lmKmLL3NK/LwPS1Xx58YnfqJ5VhMv2yHxE22po14Bh0MsVHzwOUz8hMIGzMLVjREPgWWMujHCEbCLUzdmJ6luY9WNsXLq2TRefip3CLzEqxvzIqX+dY+6MV8y6pU3zdPkMunn7T51Y94k1COy3S0S2e+JWny+2tmqsrvVnLJ44qtX1NJ1Z1NTn8jf/Xe47semb7X5gGbvbHm47t6128Ov5KpDx4MuDQOE63wrsOYrNn0FpiueeonKWiKbZ8C04FVeFThs1pTx2rWd8ny/dlf8pK0/Xeuatg4AnDbftPW3a807d4DneZwZhAnP91xvbjxlROZ2IUSUBOI6vreKcOuSQljee4q6qUda3ruZrqv8Z//9qHvvev7Ck0ZLtwnleT6Ie0//ALoRXtyDrEemfJj0eVkP5Pwtbb11rXk5H1V6ZPeMenDeiQfPe8L5SmDKPO9htUPEHuoEmdUO2nxiUfShzK0/AntroA/Vp1x1osNb3ES/xVMvfpdHDTZWfz7Awn/diIw4UP18/mGLdW2P1OuCGn7wMu4v1jNZOeT5gf7rVGS+89j+/tHTjQfPdtAxHoCvMIgDpr4h2Amvgxyw0AgMVq5QExYPokN90L358XSCd1AOXuL0aYRvVDZx8pvhFeOAoyMKMHpiEjNUFxymX4m4TlG5TAz2vkZDPXy2rHSRSdU0N3CrW4oMdDEuW7Wb/KDrNNErtD4BR4/kUXNLwNGj+oZhsPCRKnEIBoJfJ+Q7BoJf7+3CBW/wa4V8hy/49UK+w3Pyi5/yCLLrkelqhkCXJmdGejdFBL9yyHfAZ1O88WkMqOeW6abDADer/PvScErn0nqu9FQK4+Re9Wzb5+b1WDuu+mTSm+kcxlbvF16KBRbFn65Lvqcapps4Sc2Q4riO7/VfiEIuda9mbevjUvc+5Kc/cb468lwtadPo17Y+rOizwHja0bNtj2z0x/GJRCKRSCSi+QGv+R9DkcCx8AAAAABJRU5ErkJggg=="
+              alt=""
+            />
+            <input type="text" placeholder="Leaving from" />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAY1BMVEX///8AAAD5+fkrKytcXFz8/Pzu7u51dXUWFhbl5eXZ2dnBwcFXV1dTU1Pc3Ny8vLxvb2+QkJCurq5paWlOTk6Hh4fR0dGbm5tAQEDIyMihoaEyMjJ7e3s6Ojq0tLSoqKgdHR0xJnyrAAADMUlEQVRoge2abVfyMAyG6d6kA0RwMlBU/v+vFJDDHL3TtSQZz3lOr6/m9J40SZO0k0kikUgkEol/mczWmyO1zcZXnu3n29ycybfz/WzEb6jahXFYtNUo4rPC1f6lmKmLL3NK/LwPS1Xx58YnfqJ5VhMv2yHxE22po14Bh0MsVHzwOUz8hMIGzMLVjREPgWWMujHCEbCLUzdmJ6luY9WNsXLq2TRefip3CLzEqxvzIqX+dY+6MV8y6pU3zdPkMunn7T51Y94k1COy3S0S2e+JWny+2tmqsrvVnLJ44qtX1NJ1Z1NTn8jf/Xe47semb7X5gGbvbHm47t6128Ov5KpDx4MuDQOE63wrsOYrNn0FpiueeonKWiKbZ8C04FVeFThs1pTx2rWd8ny/dlf8pK0/Xeuatg4AnDbftPW3a807d4DneZwZhAnP91xvbjxlROZ2IUSUBOI6vreKcOuSQljee4q6qUda3ruZrqv8Z//9qHvvev7Ck0ZLtwnleT6Ie0//ALoRXtyDrEemfJj0eVkP5Pwtbb11rXk5H1V6ZPeMenDeiQfPe8L5SmDKPO9htUPEHuoEmdUO2nxiUfShzK0/AntroA/Vp1x1osNb3ES/xVMvfpdHDTZWfz7Awn/diIw4UP18/mGLdW2P1OuCGn7wMu4v1jNZOeT5gf7rVGS+89j+/tHTjQfPdtAxHoCvMIgDpr4h2Amvgxyw0AgMVq5QExYPokN90L358XSCd1AOXuL0aYRvVDZx8pvhFeOAoyMKMHpiEjNUFxymX4m4TlG5TAz2vkZDPXy2rHSRSdU0N3CrW4oMdDEuW7Wb/KDrNNErtD4BR4/kUXNLwNGj+oZhsPCRKnEIBoJfJ+Q7BoJf7+3CBW/wa4V8hy/49UK+w3Pyi5/yCLLrkelqhkCXJmdGejdFBL9yyHfAZ1O88WkMqOeW6abDADer/PvScErn0nqu9FQK4+Re9Wzb5+b1WDuu+mTSm+kcxlbvF16KBRbFn65Lvqcapps4Sc2Q4riO7/VfiEIuda9mbevjUvc+5Kc/cb468lwtadPo17Y+rOizwHja0bNtj2z0x/GJRCKRSCSi+QGv+R9DkcCx8AAAAABJRU5ErkJggg=="
+              alt=""
+            />
+            <input type="text" placeholder="Going to" />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAAaVBMVEX///8AAADGxsZCQkKOjo5+fn7z8/P29vbd3d2+vr7X19c9PT2cnJxlZWVvb29hYWHr6+tqamotLS0eHh60tLTPz89YWFilpaV3d3cZGRnj4+MJCQmUlJQnJyc3Nzerq6tQUFBJSUmGhoafSlO7AAAD3klEQVRoge2b6xqiIBCGQ0s0K63USjOz+7/I1TY5CYOwWdvz8P0rZng9wDCMulio5RWo0+0EmABqbr333bPzXpzQS3sb793gvbGCl4goMvfOqPfahn6l/om5d0G9lzb0lvofAlPn4Ea9fRs6439MTZ3TA3Psju7oji5VkIZ/hSX0cLIkdDy0parQkT786uWQj+kpmqqqHNPXpNF/SC8kE5mfoVmkX6bS6xSg98rG8A3b3tPj2ejjZS/nmvtFbUt/xt3NKis0UVV34zFz7PeuM483yQV6wrX2CcWJ/tyPDg9Uzh97f6YNbyEsmuWRa931E4D+lfMHo9OGO9nnhNnyFscSuPCoStkOrr1FPZ0ec+Oov4vpUTDhL71wX9DjeUFWSVEU52dmFk2HvwZ1fu6ck9XzLB+ihQfShWaDEf+UEFJGvevoR+7alK0RHMVcRFmPp4uGjlCDSWt0GzfDOtBEFDeSuaqlo3qZ5Z2ijW/K7uVvot47Wx5krXr6nHJ0R3d0R/8u3b8uZ1Otpa8Wswn736QHju7ojv7f0vHGV2krlD/Xe6XpleTGRnTcIkCR3F2i24A3ol9lXRGx1VMszZqJljZ0zb6R6UC3u7ag67ZuV+qt211b0AMNnXlk0cCWNnS2cCMTM+pD2PJgQ89kPREVmHEvQNPGhj7e8zOqudpHINYmWJ2JlVmsy08bhTLMuS9wprI80ULAL0VaR3f0b9BxoJCka4WYqWlGL3exSr5QY89apemWxCUjegpW6RrWHQzK9VA6NKKvoC7RhSlHYtCShFojumaFjWTeclnQddkF83hjhuwCT88u4LXYLrto4S5D6l3ClrENHb6b3KOVLWg6jBCz+Q6la3d+gYeSGzJADGNd6kUKhQtBocrSozPzt+K8ozv65+lYKbHnKZZm9DXwKOzKuUN7/ZhsJ4zo8N7wMRGO6IpgRIeDN2I2cgFsmdjQNSssk9npHlBb0L9bu9BlF/Oeu6YkwGYXmvte2NDXsp6IuPcV4TE/1FjM5runrtxcVny8WamLFzFJfg1jHV6rxL8z0qlUmtLD/K047+iO/nF64Kk0ejM7VJrSOocZPQNeqUv4aJOoLS+kzmBEh2v+Z9YdLjQMqJlWGc0bn60FXbfCMoWbGfbv380uvlu3WZzBHiumZqXJLvY29BJ8JMa9Ewte+mpYjs3me3hXdyl8RAPgWzI5firSOrqjO/oP0ye85XXYJqK2Mu1h7WQ6aumfkaMPgvfq7xefkacGn0W8QbXwvdBO7/JG7YS5qHmw82aNig9GH4X8oyTf1+Zmn4XY6yJ+p/Q6/fP8Y68+syf+BymsVIhKaCjRAAAAAElFTkSuQmCC"
+              alt=""
+            />
+            <input type="date" placeholder="check in" />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAMAAAC4XpwXAAAAaVBMVEX///8AAADGxsZCQkKOjo5+fn7z8/P29vbd3d2+vr7X19c9PT2cnJxlZWVvb29hYWHr6+tqamotLS0eHh60tLTPz89YWFilpaV3d3cZGRnj4+MJCQmUlJQnJyc3Nzerq6tQUFBJSUmGhoafSlO7AAAD3klEQVRoge2b6xqiIBCGQ0s0K63USjOz+7/I1TY5CYOwWdvz8P0rZng9wDCMulio5RWo0+0EmABqbr333bPzXpzQS3sb793gvbGCl4goMvfOqPfahn6l/om5d0G9lzb0lvofAlPn4Ea9fRs6439MTZ3TA3Psju7oji5VkIZ/hSX0cLIkdDy0parQkT786uWQj+kpmqqqHNPXpNF/SC8kE5mfoVmkX6bS6xSg98rG8A3b3tPj2ejjZS/nmvtFbUt/xt3NKis0UVV34zFz7PeuM483yQV6wrX2CcWJ/tyPDg9Uzh97f6YNbyEsmuWRa931E4D+lfMHo9OGO9nnhNnyFscSuPCoStkOrr1FPZ0ec+Oov4vpUTDhL71wX9DjeUFWSVEU52dmFk2HvwZ1fu6ck9XzLB+ihQfShWaDEf+UEFJGvevoR+7alK0RHMVcRFmPp4uGjlCDSWt0GzfDOtBEFDeSuaqlo3qZ5Z2ijW/K7uVvot47Wx5krXr6nHJ0R3d0R/8u3b8uZ1Otpa8Wswn736QHju7ojv7f0vHGV2krlD/Xe6XpleTGRnTcIkCR3F2i24A3ol9lXRGx1VMszZqJljZ0zb6R6UC3u7ag67ZuV+qt211b0AMNnXlk0cCWNnS2cCMTM+pD2PJgQ89kPREVmHEvQNPGhj7e8zOqudpHINYmWJ2JlVmsy08bhTLMuS9wprI80ULAL0VaR3f0b9BxoJCka4WYqWlGL3exSr5QY89apemWxCUjegpW6RrWHQzK9VA6NKKvoC7RhSlHYtCShFojumaFjWTeclnQddkF83hjhuwCT88u4LXYLrto4S5D6l3ClrENHb6b3KOVLWg6jBCz+Q6la3d+gYeSGzJADGNd6kUKhQtBocrSozPzt+K8ozv65+lYKbHnKZZm9DXwKOzKuUN7/ZhsJ4zo8N7wMRGO6IpgRIeDN2I2cgFsmdjQNSssk9npHlBb0L9bu9BlF/Oeu6YkwGYXmvte2NDXsp6IuPcV4TE/1FjM5runrtxcVny8WamLFzFJfg1jHV6rxL8z0qlUmtLD/K047+iO/nF64Kk0ejM7VJrSOocZPQNeqUv4aJOoLS+kzmBEh2v+Z9YdLjQMqJlWGc0bn60FXbfCMoWbGfbv380uvlu3WZzBHiumZqXJLvY29BJ8JMa9Ewte+mpYjs3me3hXdyl8RAPgWzI5firSOrqjO/oP0ye85XXYJqK2Mu1h7WQ6aumfkaMPgvfq7xefkacGn0W8QbXwvdBO7/JG7YS5qHmw82aNig9GH4X8oyTf1+Zmn4XY6yJ+p/Q6/fP8Y68+syf+BymsVIhKaCjRAAAAAElFTkSuQmCC"
+              alt=""
+            />
+            <input type="date" placeholder="Dates" />
+          </div>
+        </div>
+        <div id="ser">
+          <h2>Search</h2>
+        </div>
+      </div>
+      <div id="photoea">
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/07/07/334144_v3_900x506_30679_WashingtonDC_HiltonsofDC.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh"
+            alt=""
+          />
+          <div id="fixd">
+            <div>
+              <img
+                src="https://tpc.googlesyndication.com/simgad/3250132075008563886?"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Make historic memorie in Dc</h3>
+              <p>
+                A picturesque city along the potomac known for its fantastic
+                history and culture.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="innerphoto">
+            <div>
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/09/305339_V4_900x506_30415_ThailandAmazingNewChapter.png?impolicy=fcrop&w=900&h=506&q=mediumHigh"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>Discover Thiland</h2>
+              <p>The best days are ahead.</p>
+            </div>
+          </div>
+          <div class="innerphoto">
+            <div>
+              <img
+                src="https://resources.discover-canada.ca.expedia.pulselive.com/photo-resources/2021/08/02/fcdb2b5b-0f04-4bc2-bee2-5d94f85ee33b/Hiking_Lake_Louise_Lake_Agnes_Tea_House_Paul_Zizka_4_Horizontal-custom.jpeg?width=398&height=515"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>Refresh your view in Canada</h2>
+              <p>Get away from the familiar to find fresh perspectives</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Popular flight destinations</h1>
+      <div id="six_img">
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/05/09/D-LA-300X300.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+            alt=""
+          />
+          <h3>Los Angeles Flights</h3>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/28/D-LasVegas-300X300.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+            alt=""
+          />
+          <h3>Las Vegas Flights</h3>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2021/05/06/cancun_500x500.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+            alt=""
+          />
+          <h3>Cancun Flights</h3>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2021/05/06/miami_500x500.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+            alt=""
+          />
+          <h3>Miami Flights</h3>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2021/05/06/honolulu_500x500.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+            alt=""
+          />
+          <h3>Honolulu Flights</h3>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/28/D-Orlando-300X300.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+            alt=""
+          />
+          <h3>Oriando Flights</h3>
+        </div>
+      </div>
+      <h1>Flight deals departing near you</h1>
+      <div id="three_img">
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/29/SF-flight-SEO-banner-Merch-domestic-384X256.jpg"
+            alt=""
+          />
+          <p>Looking for a weekend getaway?</p>
+          <h3>Explore USA with cheap domestic flight deals</h3>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/29/SF-flight-SEO-banner-Merch-international-384X256.jpg"
+            alt=""
+          />
+          <p>Where are you dreaming of going ?</p>
+          <h3>
+            Find Internation flight deals that take you to <br />
+            some great places
+          </h3>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/04/29/SF-flight-SEO-banner-business-384X256.jpg"
+            alt=""
+          />
+          <p>Experice the luxury of traveling ?</p>
+          <h3>
+            Grab chep business class flight tickets to treat <br />
+            yourself
+          </h3>
+        </div>
+      </div>
+      <div id="middimg">
+        <img
+          src="https://tpc.googlesyndication.com/simgad/4253733670035740695?"
+          alt=""
+        />
+      </div>
+      <div id="hotstar">
+        <div>
+          <img
+            src="https://mesocp.azureedge.net/media/2w1gtmlt/210406_emea_thailand_24956_tabs_7_900x506_re.jpg?anchor=center&mode=crop&width=506&height=446&v=7-15-202212:02:20PM&quality=85"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://tpc.googlesyndication.com/simgad/9185944146204319798?"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="textes">
+        <div>
+          <h2>Tips on booking cheap flights</h2>
+          <p>
+            Looking for the best time to buy airline tickets to get a cheap
+            flight to everywhere? We’ve got you covered anytime, anywhere.
+            Here’s how to find the best deal for flight booking no matter where
+            you want to go in the world.
+          </p>
+          <h3>
+            Which day of the week is the best day to buy cheap airline tickets?
+          </h3>
+          <p>
+            For both U.S. domestic and international travel, Sundays can be
+            cheaper for airline ticket purchases. Fridays tend to be the most
+            expensive day to book a flight. Booking on the right day of the week
+            could save you up to 6% on your airfare, according to historical
+            data*.
+          </p>
+          <h3>When is the best time to buy airline tickets?</h3>
+          <p>
+            Based on 2020 And 2021 global flight data for Economy tickets,
+            prices usually start to increase 56 days before departure for
+            domestic flights. When traveling internationally, prices usually
+            start to increase 21 days before departure*. Keep in mind that this
+            isn’t a hard-and-fast rule; keeping an eye on prices is a good idea
+            when trying to find the best airfare deals. Compare fares across
+            different airlines, and set up a price alert for your preferred
+            route.
+          </p>
+          <h3>Which are the cheapest days to fly?</h3>
+          <p>
+            Analysis of domestic and international airfare prices shows that
+            flying out on Fridays can be cheaper. Many travelers start their
+            trips on Sundays, so your chances of a lower price are better when
+            departing early in the week instead. Starting your trip on a Friday
+            could be almost 11% cheaper than air travel on Sundays, so book
+            flights online wisely*!
+          </p>
+          <h3>Which is the cheapest month to fly?</h3>
+          <p>
+            The cheapest month to fly can vary depending on where you’re going,
+            so finding the best rates largely comes down to avoiding peak travel
+            times for your destination. If you’re looking for cheap
+            international flights, the most expensive month tends to be
+            February, while the cheapest is November with cheap flights in
+            November offering potential savings of up to 34.6% relative to
+            February. Cheap domestic flights work a bit differently, with March
+            being the most expensive and August being the least expensive with
+            cheap flights in August offering savings of up to 35%*.
+          </p>
+          <h3>How can I find the cheapest flights on Expedia?</h3>
+          <p>
+            Compare cheap airline ticket prices at a glance from a large
+            inventory of carriers on Expedia. You can get cheap flights by
+            staying flexible with travel dates, carriers, and nonstop/layover
+            flights to get the best price. Insider tip: Become a member (it’s
+            free!) to earn rewards back on every booking. We make your travel
+            stress-free and source incredible airfare deals so you can sit back,
+            relax, and start your vacation or business trip.
+          </p>
+          <h3>How can I save money on flights?</h3>
+          <p>
+            Mixing and matching airline tickets and fare types could help save
+            money on airfare to your destination. Easily compare prices for
+            carriers, arrival and departure dates, airplane cabin class, and
+            more when you book with Expedia. Booking your plane ticket on a
+            Sunday, and departing on Friday, could possibly save you money*
+            based on historical data. You can also filter for flights based on
+            your budget, such as looking for cheap flights under $200
+            specifically.
+          </p>
+          <h3>How can I get cheap last-minute flight deals?</h3>
+          <p>
+            The historical data analysis of flight pricing patterns shows that
+            you can still find amazing airfare deals 3 weeks prior to departure*
+            when traveling domestically. International last-minute flights offer
+            great deals 2 weeks prior to departure if you’re flying premium, but
+            economy travelers may want to strive for no less than 4 weeks out*.
+            Try to stay flexible with travel dates, airports, and
+            nonstop/layover flights to find the cheapest flights on Expedia.
+            Whether you’re planning a quick business trip or a spontaneous
+            holiday with friends, you’ll have your choice of last-minute
+            flights, roundtrip, or multicity flights on Expedia. You’ll find
+            everything you need for your travels all in one place — and all at
+            the right price.
+          </p>
+        </div>
+        <div id="tope">
+          <h3>How do I book with Expedia?</h3>
+          <p>
+            Booking your flight with Expedia is easy, as all you have to do is
+            implement your travel dates, departure destination, like flights
+            from Atlanta or flights from Hartsfield-Jackson, and arrival
+            destination into the search. Then, all the available flights for
+            those dates and destinations will appear. You can use search filters
+            to narrow down the results as well based on a variety of factors
+            like the airline, number of stops, departure time, and policies like
+            seat choice and refundable bookings. Additionally, travelers may
+            alter their search for round-trip flights, one-way flights, and
+            multicity flights.
+          </p>
+          <h3>What should I look out for when booking flights?</h3>
+          <p>
+            Several factors go into any flight booking, and you’ll need to keep
+            an eye out for them all to ensure that you get the travel time,
+            luggage policy, airline, and class you want. Consider which airport
+            is closest to your ultimate destination (travelers to Los Angeles
+            may prefer flights to LAX over flights to PSP, and make sure that
+            the flight will accommodate all the luggage you plan on bringing.
+            Additionally, consider the different flight classes including
+            economy flights for functionality and premium flights if you want to
+            enjoy a more relaxing experience.
+          </p>
+          <h3>Where’s the cheapest place to travel?</h3>
+          <p>
+            The cheapest place to travel can be in the same country, like
+            Chicago. Flights to Chicago are fairly affordable no matter where
+            you’re coming from in the continental United States. Flights to Las
+            Vegas tend to be pretty affordable as well. While the Vegas airport
+            isn’t a hub for any major airline, it does have plenty of
+            competition to keep prices relatively low.
+          </p>
+          <h3>Where can I fly for cheap?</h3>
+          <p>
+            Staying within a strict budget still allows you to find plenty of
+            cheap flights, even to destinations like Puerto Rico. In fact,
+            flights to Puerto Rico don’t even require U.S. citizens to have a
+            passport. Flights to Alberta and other destinations in Canada can be
+            fairly affordable as well.
+          </p>
+          <h3>Is it cheaper to buy flights last minute?</h3>
+          <p>
+            Flight tickets can be cheaper at the last minute depending on how
+            late you’re actually booking, where you’re going, and the kind of
+            flight you opt for. For domestic flights with Economy tickets,
+            prices usually start to increase 3 weeks before departure, and 4
+            weeks for international flights, according to historical data*.
+          </p>
+          <h3>Are fully refundable flights available?</h3>
+          <p>
+            Yes, several fully refundable flights are available and will be
+            labeled as such right on your search results page in green text. You
+            may also filter for fully refundable flights specifically to
+            eliminate all flights from your results that don’t qualify. Just
+            make sure to check the specific policy for each flight before
+            booking.
+          </p>
+          <h3>Why should I book my flight with Expedia?</h3>
+          <p>
+            Booking with Expedia makes finding a flight easy, but that’s just
+            the beginning of everything you can take advantage of. We also offer
+            hotels, car rentals, and even activities that you can purchase with
+            package deals available for travelers planning more than one aspect
+            of their trip at a time. Plus, Expedia offers stunning cheap flight
+            deals that can help you save with ease. Expedia Rewards members also
+            accrue points with every purchase that can be put toward discounts
+            on subsequent bookings in the future.
+          </p>
+          <p id="smallser">
+            *Data specialists from both ARC and Expedia Group analyzed ARC’s
+            global flight data to distil actionable information to help people
+            save money on travel. While it’s impossible to guarantee when to
+            find the lowest prices, after examining the variables, we were able
+            to observe trends. Best day of the week to book and best day of the
+            week to depart is based on average round-trip ticket prices for
+            January through August for 2021, sourced from ARC’s global airline
+            sales database. Best month to depart recommendation is based on
+            average round-trip ticket prices for January through December for
+            2020, sourced from ARC's global airline sales database. Best time to
+            book recommendation is based on average round-trip ticket prices for
+            January through August for 2021 & average round-trip ticket prices
+            for January through December for 2020, sourced from ARC's global
+            airline sales database.
+          </p>
+        </div>
+      </div>
+      <div id="divone">
+        <div>
+          <img
+            src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg"
+            alt=""
+          />
+        </div>
+        <div id="county">
+          <h2>Our app takes you further</h2>
+          <p>
+            When you book on the app you can save up to 25% on select hotels
+            while earning <br />
+            double the points with every booking. With these app deals you'll
+            save even more on <br />
+            trips, and that means you can take more trips, and manage it all on
+            the go.
+          </p>
+          <h3>Text yourself a download link for easy access</h3>
+          <div id="phone">
+            <div><input type="text" /></div>
+            <div><input type="text" /></div>
+            <div><input type="text" /></div>
+          </div>
+          <p>
+            By providing your number, you agree to receive a one-time automated
+            text message <br />
+            with a link to get the app. Standard text message rates may apply.
+          </p>
+        </div>
+        <div id="imgs">
+          <img
+            src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_BNA_HP.png"
+            alt=""
+          />
+          <h2>Scan the QR code</h2>
+        </div>
+      </div>
+      <div id="scroller">
+        <h2>More trip options</h2>
+        <p>Explore a world of travel with Expedia</p>
+        <div id="liness"></div>
+        <hr />
+        <div id="scroll">
+          <div>
+            <h3>Domestic flights</h3>
+            <p>Flights to Vegas</p>
+            <p>Flights to New York</p>
+            <p>Flights to Orlando</p>
+            <p>Flights to Maui</p>
+            <p>Flights to Houston</p>
+            <h3>Internation Flights</h3>
+            <p>Flights to Mexico City</p>
+            <p>Flights to London</p>
+            <p>Flights to Manila</p>
+            <p>Flights to Tokyo</p>
+            <p>Flights to bali</p>
+            <h3>Flight routes</h3>
+            <p>Flights from Philadelphia to Oriando</p>
+            <p>Flights from Philadelphia to Las Vegas</p>
+            <p>Flights from Chicago to Dublin</p>
+            <p>Flights from Los Angeles to Madrid</p>
+            <p>Flights from Minneapolis to Seattle</p>
+            <h3>Airlines</h3>
+            <p>JetBlue</p>
+            <p>American Airlines</p>
+            <p>Delta</p>
+            <p>Sky Airlines</p>
+            <p>LATAM Airlines Group</p>
+            <h3>More destination</h3>
+            <p>Domestic routes</p>
+            <p>Destination by city</p>
+            <p>Business Class Flight</p>
+          </div>
+          <div>
+            <br />
+            <br />
+            <p>Flights to Hawali Island</p>
+            <p>Flights to Miami</p>
+            <p>Flights to Los Angeles</p>
+            <p>flights to chicago</p>
+            <p>flights to Denver</p>
+            <br />
+            <br />
+            <p>Flights to Puerto Rico Island</p>
+            <p>Flights to Bora Bora</p>
+            <p>Flights to Cancun</p>
+            <p>Flights to Cabo San Lucas</p>
+            <p>Flights to Paris</p>
+            <br />
+            <br />
+            <p>Flights from san francisco to Delhi</p>
+            <p>Flights from Manila to El Nido</p>
+            <p>Flights from New York to Cancun</p>
+            <p>Flights from Honolulu to Los Angeles</p>
+            <p>Flights from Dallas to Washington</p>
+            <br />
+            <br />
+            <p>Copa</p>
+            <p>Spirit Airlines</p>
+            <p>Allegiant Air</p>
+            <p>Philippine Airlines</p>
+            <p>United</p>
+            <br />
+            <p>Inernational routes</p>
+            <p>Destinations by country</p>
+            <p>First Class Flight</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottompage">
+        <div>
+          <img
+            src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h4>Company</h4>
+          <p>About</p>
+          <p>Jobs</p>
+          <p>List your property</p>
+          <p>Partnerships</p>
+          <p>Newsroom</p>
+          <p>Investor Relations</p>
+          <p>Advertising</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p>United States of America travel guide</p>
+          <p>Hotels in United States of America</p>
+          <p>Vacation rentals in United states of</p>
+          <p>Vacation packages in United States of America</p>
+          <p>Domestic flights</p>
+          <p>Car rentals in United States of America</p>
+          <p>All accommodation types</p>
+        </div>
+        <div>
+          <h4>Policies</h4>
+          <p>Privcy policy</p>
+          <p>Terms of use</p>
+          <p>Vrbo terms and condition</p>
+          <p>Expedia Rewards Terms</p>
+          <p>Accessibility</p>
+          <p>Do not sell my personal information.</p>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <p>Cancel your hotel or vacation rental booking</p>
+          <p>Cancel your flight</p>
+          <p>Refund timelines,,Policies & process</p>
+          <p>Use an Expedia coupon</p>
+          <p>international travel documnets</p>
+        </div>
+      </div>
+      <hr />
+      <div id="last_text">
+        <p>
+          Expedia, Inc. is not responsible for content on external Web sites.
+        </p>
+        <p>
+          © 2022 Expedia, Inc., an Expedia Group company. All rights reserved.
+          Expedia and the Airplane Logo are trademarks or registered trademarks
+          of Expedia, Inc. CST# 2029030-50.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
