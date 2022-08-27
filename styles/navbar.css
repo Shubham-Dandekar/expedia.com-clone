@@ -15,6 +15,7 @@
 }
 
 #logo {
+  display: inline;
   margin-left: 70px;
   margin-right: 15px;
   width: 126px;
@@ -41,7 +42,8 @@
   color: #343b53;
 }
 
-#submenu {
+#submenu,
+#log-out {
   display: none;
 }
 
@@ -49,7 +51,8 @@
   color: blue;
 }
 
-#navbar ul li:hover #submenu {
+#navbar ul li:hover #submenu,
+#signin:hover #log-out {
   display: block;
   width: 400px;
   text-align: left;
@@ -58,22 +61,36 @@
   margin-top: 13px;
   border-radius: 7px;
   background: white;
+  position: absolute;
+  z-index: 2;
 }
 
-#navbar ul li:hover #submenu ul {
+#navbar ul li:hover #submenu ul,
+#signin:hover #log-out ul {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-#navbar ul li:hover #submenu ul li {
+#navbar ul li:hover #submenu ul li,
+#signin:hover #log-out ul li {
   width: 100%;
   padding: 10px;
   padding-left: 30px;
 }
 
-#navbar ul li:hover #submenu ul li:hover {
+#navbar ul li:hover #submenu ul li:hover,
+#signin:hover #log-out ul li:hover {
   background-color: #d7dbe9;
+  cursor: pointer;
+}
+
+#signin:hover #log-out {
+  width: 120px;
+}
+
+#signin {
+  margin-top: -15px;
 }
 
 .sub-logo {
@@ -82,9 +99,10 @@
 
 #menu {
   display: flex;
-  justify-content: space-between;
-  width: 32%;
-  margin-left: 500px;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 72%;
+  margin-right: 80px;
 }
 
 #menu a {
@@ -94,4 +112,39 @@
 
 #menu a:hover {
   color: blue;
+}
+
+#menu_alt1 {
+  display: none;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  #menu {
+    display: none;
+  }
+
+  #menu_alt1 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 72%;
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  #menu {
+    display: none;
+  }
+  #navbar ul {
+    display: none;
+  }
+
+  #menu_alt1 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 72%;
+    margin-right: 80px;
+  }
 }

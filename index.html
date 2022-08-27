@@ -12,10 +12,10 @@
       href="https://www.expedia.com/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/popup.css" />
   </head>
   <body>
     <div id="navbar">
@@ -95,14 +95,34 @@
         <div><a href="#">Support</a></div>
         <div><a href="#">Trips</a></div>
         <div>
-          <a href="#"
+          <a href="./signin.html"
             ><img
               src="https://img.icons8.com/material-sharp/20/000000/bell.png"
           /></a>
         </div>
-        <div>
-          <a href="signin.html">Sign in</a>
+        <div id="signin">
+          <ul>
+            <li>
+              <a href="signin.html">Sign in</a>
+              <div id="log-out">
+                <ul>
+                  <li>Log out</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div id="menu_alt1">
+        <img
+          src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/25/000000/external-suitcase-interface-kiranshastry-solid-kiranshastry.png"
+        />
+        <a href="./signin.html">
+          <img src="https://img.icons8.com/material-sharp/25/000000/bell.png"
+        /></a>
+        <img
+          src="https://img.icons8.com/metro/22/000000/gender-neutral-user.png"
+        />
       </div>
     </div>
     <div id="pop-up">
@@ -131,6 +151,35 @@
         </select>
         <button onclick="closepopup()">Save</button>
       </form>
+    </div>
+    <div id="searchbox">
+      <div>
+        <div>
+          <div class="active">Stays</div>
+          <div>Flights</div>
+          <div>Cars</div>
+          <div>Packages</div>
+          <div>Things to do</div>
+          <div>Cruises</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <input type="text" id="search" placeholder="Going to" />
+          <input type="date" id="" /><input type="date" id="" />
+        </div>
+        <div>
+          <div>
+            <input type="checkbox" name="" id="" />
+            <p>Add a flight</p>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="" />
+            <p>Add a car</p>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Search</button>
     </div>
     <div id="banner-1">
       <div class="color-overlay"></div>
@@ -251,6 +300,21 @@
           src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_HP.png"
         />
         <h5>Scan the QR code</h5>
+      </div>
+    </div>
+    <div id="banner-5_alt1">
+      <img
+        src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg"
+      />
+      <div>
+        <h1>Our app takes you further</h1>
+        <p>
+          When you book on the app you can save up to 25% on select hotels while
+          earning double the points with every booking. With these app deals
+          you'll save even more on trips, and that means you can take more
+          trips, and manage it all on the go.
+        </p>
+        <button>Switch to the app</button>
       </div>
     </div>
     <div id="banner-6">
@@ -485,12 +549,12 @@
       </div>
     </div>
     <div id="footer">
-      <div>
+      <div id="flogo">
         <img
           src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
         />
       </div>
-      <div>
+      <div id="company">
         <p>Company</p>
         <ul>
           <li><a href="#">About</a></li>
@@ -502,7 +566,7 @@
           <li><a href="#">Advertising</a></li>
         </ul>
       </div>
-      <div>
+      <div id="explore">
         <p>Explore</p>
         <ul>
           <li><a href="#">United States of America travel guide</a></li>
@@ -514,7 +578,7 @@
           <li><a href="#">All accommodation types</a></li>
         </ul>
       </div>
-      <div>
+      <div id="policies">
         <p>Policies</p>
         <ul>
           <li><a href="#">Privacy policy</a></li>
@@ -525,7 +589,7 @@
           <li><a href="#">Do not sell my personal information</a></li>
         </ul>
       </div>
-      <div>
+      <div id="help">
         <p>Help</p>
         <ul>
           <li><a href="#">Support</a></li>
@@ -546,5 +610,5 @@
     </div>
   </body>
 </html>
-<script src="navbar.js"></script>
-<script src="popup.js"></script>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/popup.js"></script>

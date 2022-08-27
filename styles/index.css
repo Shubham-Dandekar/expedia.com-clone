@@ -1,0 +1,504 @@
+#searchbox {
+  width: 80%;
+  margin: auto;
+  height: 250px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.active {
+  border-bottom: 3px solid #3662d8;
+}
+
+#searchbox > :first-child {
+  border-bottom: 1px solid rgb(194, 194, 194);
+  margin-bottom: 20px;
+}
+
+#searchbox > :first-child > div {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#searchbox > :nth-child(2) > :first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchbox > :nth-child(2) > :last-child {
+  display: flex;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+#searchbox > :nth-child(2) > :last-child div {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  width: 20%;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  background-color: #3662d8;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#search {
+  width: 55%;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid rgb(194, 194, 194);
+  border-radius: 10px;
+}
+
+input[type="date"] {
+  width: 20%;
+  font-size: 18px;
+  padding: 8px;
+  border: 2px solid rgb(194, 194, 194);
+  border-radius: 10px;
+}
+
+#banner-1 {
+  width: 80%;
+  height: 514px;
+  margin: auto;
+  background-image: url(https://a.travel-assets.com/travel-assets-manager/ceorg-1341/US-HP-Hero-D-928x398.jpg);
+  background-size: 100%;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000b2680;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+#content-1 {
+  width: 30%;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+#content-1 h1 {
+  font-size: 35px;
+}
+
+#content-1 p {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#content-1 button,
+#banner-5 button {
+  background-color: #3662d8;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+#banner-2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+#cards > div:hover {
+  cursor: pointer;
+}
+
+#cards > div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(194, 194, 194);
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+#cards > div p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgb(63, 63, 63);
+}
+
+#banner-3,
+#banner-4 {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  gap: 27px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#banner-3 > div:hover,
+#banner-4 > div:hover {
+  cursor: pointer;
+}
+
+#banner-3 img,
+#banner-4 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#banner-3 img + p,
+#banner-4 img + p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#banner-3 img + p + p,
+#banner-4 img + p + p {
+  font-weight: 500;
+}
+
+#banner-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#banner-5 {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  margin-top: 50px;
+  display: flex;
+}
+
+#banner-5 > img {
+  width: 27%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#banner-5 > :nth-child(2) {
+  width: 48%;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+#banner-5 h1 {
+  font-weight: 500;
+}
+
+#banner-5 p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#banner-5 > :nth-child(2) :last-child {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#banner-5 > div > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#banner-5 button,
+#banner-5 input,
+#banner-5 select {
+  width: 31%;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+#banner-5 input,
+#banner-5 select {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#banner-5 > :nth-child(3) {
+  width: 20%;
+  padding: 50px;
+}
+
+#banner-5 > div > img {
+  width: 150px;
+  height: 150px;
+}
+
+#banner-5 h5 {
+  text-align: center;
+}
+
+#banner-6 {
+  width: 78%;
+  margin: auto;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#banner-6 > :first-child {
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+#banner-6 > :first-child > div {
+  width: 330px;
+  border-bottom: 3px solid #3662d8;
+  padding: 10px;
+}
+
+#banner-6 > :last-child {
+  height: 193px;
+  padding: 10px;
+  overflow: auto;
+}
+
+#banner-6 > :last-child > div > div {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#banner-6 a {
+  text-decoration: none;
+  color: blue;
+}
+
+#banner-6 a:hover {
+  text-decoration: underline;
+}
+
+#banner-5_alt1 {
+  display: none;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  #searchbox > :first-child > div {
+    width: 80%;
+  }
+
+  #banner-1 {
+    height: 200px;
+    width: 90%;
+  }
+
+  #content-1 {
+    width: 100%;
+    color: white;
+    padding: 10px 40px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  #content-1 h1 {
+    font-size: 30px;
+  }
+
+  #content-1 p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  #content-1 button {
+    background-color: #3662d8;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+  }
+
+  #banner-6 > :last-child > div > div {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #banner-5 {
+    display: none;
+  }
+
+  #banner-5_alt1 {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  #banner-5_alt1 > img {
+    width: 27%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #banner-5_alt1 > :nth-child(2) {
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  #banner-5_alt1 h1 {
+    font-weight: 500;
+  }
+
+  #banner-5_alt1 p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  #banner-5_alt1 button {
+    width: 30%;
+    padding: 10px;
+    background-color: #3662d8;
+    color: white;
+    border: 1px solid #3662d8;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #searchbox > :first-child > div {
+    width: 95%;
+  }
+
+  #banner-1 {
+    height: 200px;
+    width: 90%;
+  }
+
+  #content-1 {
+    width: 100%;
+    color: white;
+    padding: 10px 40px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  #content-1 h1 {
+    font-size: 30px;
+  }
+
+  #content-1 p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  #content-1 button {
+    background-color: #3662d8;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+  }
+
+  #cards,
+  #banner-3,
+  #banner-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #banner-6 > :last-child > div > div {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #banner-5 {
+    display: none;
+  }
+
+  #banner-5_alt1 {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  #banner-5_alt1 > img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #banner-5_alt1 > :nth-child(2) {
+    padding: 20px;
+  }
+
+  #banner-5_alt1 h1 {
+    font-weight: 500;
+  }
+
+  #banner-5_alt1 p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  #banner-5_alt1 button {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #3662d8;
+    color: white;
+    border: 1px solid #3662d8;
+    border-radius: 10px;
+  }
+
+  #disclaimer {
+    width: auto;
+  }
+}

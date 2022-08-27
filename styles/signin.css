@@ -128,3 +128,15 @@ a {
   text-decoration: none;
   color: blue;
 }
+
+@media (min-width: 576px) and (max-width: 992px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  form {
+    width: 90%;
+  }
+}
