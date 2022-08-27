@@ -5,96 +5,37 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-#navbar {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  height: 60px;
-  border: 1px solid rgb(194, 194, 194);
-}
-
-#logo {
+#container{
+  
+  height: 350px;
+   
+  width: 96%;
   margin-left: 40px;
-  margin-right: 15px;
-  width: 126px;
-  height: 28px;
 }
-
-#logo:hover {
-  cursor: pointer;
+#vacc{
+  margin-left: 40px;margin-top: 40px;margin-bottom: 10px;font-weight: 500
 }
-
-#navbar ul {
-  display: inline-flex;
-  list-style: none;
-  color: black;
+#vacc-p{
+  margin-left: 40px;
 }
-
-#navbar ul li {
-  width: 120px;
-  padding: 15px;
+#acc{
+  margin-left: 65px;margin-top: -24px;
 }
-
-#navbar ul li a {
-  text-decoration: none;
-  color: #343b53;
+#des>h1{
+  font-size: 30px;font-weight: 500;
 }
-
-#submenu {
-  display: none;
+#des{
+  margin-left: 40px;
 }
-
-#navbar > ul > li > a:hover {
-  color: blue;
+#summer{
+  margin-left: 40px;
 }
-
-#navbar ul li:hover #submenu {
-  display: block;
-  width: 400px;
-  text-align: left;
-  position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-top: 13px;
-  border-radius: 7px;
-  background: white;
+#summer>h1{
+  font-weight: 500;
 }
-
-#navbar ul li:hover #submenu ul {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+#pack>h2{
+  font-weight: 500;margin-left: 40px;
 }
-
-#navbar ul li:hover #submenu ul li {
-  width: 100%;
-  padding: 10px;
-  padding-left: 30px;
-}
-
-#navbar ul li:hover #submenu ul li:hover {
-  background-color: #d7dbe9;
-}
-
-.sub-logo {
-  margin-right: 5px;
-}
-
-#menu {
-  display: flex;
-  justify-content: space-between;
-  width: 32%;
-  margin-left: 500px;
-}
-
-#menu a {
-  text-decoration: none;
-  color: #343b53;
-}
-
-#menu a:hover {
-  color: blue;
-}
-
 #loc{
   height:20px;
   margin-left: 10px;
@@ -174,35 +115,32 @@
   width: 18px;
 }
 #ad1{
-  margin-left: 40px;
+  height: 100%;
   border: 0.5px solid rgb(198, 195, 195); 
-  width: 65%;
+  width: 68%;
   border-radius: 5px;
-  padding-bottom: 20px;
+  
 }
 #ad1>h3{
   margin-bottom: 10px;
-  margin-left:80px;
-  margin-top: -60px;
+  margin-left:30px;
+  
 }
 #ad1>p{
-  margin-left:80px;
+  margin-left:30px;
 }
 #ad1-img{
   height: 250px;
   width: 100%;
   margin-bottom: 10px;
 }
-#hilton{
-  margin-left: 10px;
-  margin-top: 10px;
-}
+
 #ad2{
   width: 28%;
   border: 0.5px solid rgb(198, 195, 195);
   height: 165px;
   border-radius: 5px;
-  margin-left: 880px;
+  margin-left: 850px;
   margin-top: -345px;
  margin-bottom: 14px;
 }
@@ -233,7 +171,7 @@
   border: 0.5px solid rgb(198, 195, 195);
   height: 165px;
   border-radius: 5px;
-  margin-left: 880px;
+  margin-left: 850px;
  
 }
 #ad3>h3{
@@ -365,9 +303,14 @@ opacity: 70%;
 #explore_img-2{
 margin-left: auto;
 display: block;
-margin-right: -320px;
+height: 250px;
+width: 24%;
+margin-right: -250px;
 margin-top: -253px;
   
+}
+#explore>h1{
+  margin-left: 40px;font-size:30px;font-weight:500;
 }
 #explore>div>h4{
   margin-top: -80px;

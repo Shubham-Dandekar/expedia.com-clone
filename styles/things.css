@@ -5,94 +5,18 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
-  #navbar {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 60px;
-    border: 1px solid rgb(194, 194, 194);
+  #things-to>h1{
+    margin-left: 40px;margin-top: 40px;margin-bottom: 10px;font-weight: 500;
   }
-  
-  #logo {
+  #things-to>p{
     margin-left: 40px;
-    margin-right: 15px;
-    width: 126px;
-    height: 28px;
   }
-  
-  #logo:hover {
-    cursor: pointer;
+  #things-to>p+p{
+    color:blue;text-decoration: underline;margin-left: 380px;margin-top: -21.5px;
   }
-  
-  #navbar ul {
-    display: inline-flex;
-    list-style: none;
-    color: black;
-  }
-  
-  #navbar ul li {
-    width: 120px;
-    padding: 15px;
-  }
-  
-  #navbar ul li a {
-    text-decoration: none;
-    color: #343b53;
-  }
-  
-  #submenu {
-    display: none;
-  }
-  
-  #navbar > ul > li > a:hover {
-    color: blue;
-  }
-  
-  #navbar ul li:hover #submenu {
-    display: block;
-    width: 400px;
-    text-align: left;
-    position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-top: 13px;
-    border-radius: 7px;
-    background: white;
-  }
-  
-  #navbar ul li:hover #submenu ul {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  #navbar ul li:hover #submenu ul li {
-    width: 100%;
-    padding: 10px;
-    padding-left: 30px;
-  }
-  
-  #navbar ul li:hover #submenu ul li:hover {
-    background-color: #d7dbe9;
-  }
-  
-  .sub-logo {
-    margin-right: 5px;
-  }
-  
-  #menu {
+  #ad4>img{
     display: flex;
-    justify-content: space-between;
-    width: 32%;
-    margin-left: 500px;
-  }
-  
-  #menu a {
-    text-decoration: none;
-    color: #343b53;
-  }
-  
-  #menu a:hover {
-    color: blue;
+    margin:auto;
   }
 
   #loc{
@@ -130,22 +54,30 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;;
   }
-  #ad1{
+  #box-1{
+    height: 350px;
+    width: 96%;
     margin-left: 40px;
+  }
+  #ad1{
+    height: 100%;
     border: 0.5px solid rgb(198, 195, 195); 
-    width: 65%;
+    width: 68%;
     border-radius: 5px;
     padding-bottom: 20px;
+    
   }
   #ad1>h3{
     margin-bottom: 10px;
-    margin-left:120px;
-    margin-top: -60px;
+    margin-left: 20px;
+    
   }
   #ad1>p{
-    margin-left:120px;
+    margin-left: 20px;
   }
+  
   #ad1-img{
+    object-fit: cover;
     height: 250px;
     width: 100%;
     margin-bottom: 10px;
@@ -153,17 +85,21 @@
     border-top-right-radius: 5px;
   }
   #hilton{
+    height: 30%;
+    width: 15%;
     margin-left: 10px;
     margin-top: 10px;
   }
   #ad2{
+    height: 50%;
     width: 28%;
     border: 0.5px solid rgb(198, 195, 195);
     height: 165px;
     border-radius: 5px;
-    margin-left: 880px;
+    margin-left: 840px;
     margin-top: -345px;
    margin-bottom: 14px;
+   
   }
   #ad2-img{
     height: 100%;
@@ -188,11 +124,13 @@
     border-bottom-left-radius: 5px;
   }
   #ad3{
+    height: 50%;
     width: 28%;
     border: 0.5px solid rgb(198, 195, 195);
     height: 165px;
     border-radius: 5px;
-    margin-left: 880px;
+    margin-left: 840px;
+    
    
   }
   #ad3>h3{
@@ -205,37 +143,63 @@
     font-size: 14px;
     margin-top: 5px;
   }
-
-  #explore>div{
+  #box-2{
+  
+    width: 92.5%;
+    margin-left: 40px;
+    
+  }
+  #box-2_ad-1{
  
     background:black;
-     margin-left: 40px;
-     width: 68%;
+     
+     width: 72%;
    height: 250px;
    border-radius: 10px;
    }
-   #explore_img-1{
+   #exp-h1{
+    margin-left: 40px;font-size:30px;font-weight:500;
+   }
+   #us{
+    margin-left: 40px;font-size:30px;font-weight:500;margin-bottom: -20px;
+   }
+   #carb
+   {
+    margin-left: 40px;font-size:30px;font-weight:500;margin-bottom: -20px;
+   }
+   #more{
+    margin-left: 40px;font-size:30px;font-weight:500;margin-bottom: -20px;
+   }
+   #box-2_ad-1>img{
    height: 100%;
    width: 100%;
    border-radius: 10px;
    opacity: 70%;
    
    }
-   #explore_img-2{
-   margin-left: auto;
-   display: block;
-   margin-right: -320px;
-   margin-top: -253px;
+   #box-2_ad-2>img{
+   height: auto;
+   width: 100%;
+   height: 250px;
+  
      
    }
-   #explore>div>h4{
+   #box-2_ad-2{
+   
+    width: 26%;
+    height: auto;
+    position: relative;
+    float: right;
+    margin-top: -250px;
+   }
+   #box-2_ad-1>h4{
      margin-top: -80px;
      position: absolute;
      color: white;
      margin-left: 20px;
      text-shadow: 1px 1px black;
    }
-   #explore>div>p{
+   #box-2_ad-1>p{
      margin-top: -50px;
      position: absolute;
      color: white;
