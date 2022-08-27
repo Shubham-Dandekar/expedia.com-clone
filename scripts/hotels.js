@@ -1,3 +1,4 @@
+
 let all_arr=[[
     {img:'https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/14000000/13240000/13235700/13235605/5be22f44_b.jpg',
      title:"Andaz Delhi - a concept by Hyatt",
@@ -35,7 +36,7 @@ let all_arr=[[
         price:"11,600",
         total:"13,680",
         review:"3.8/5 Wonderful (537 reviews)",
-        type:"Free-airport shuttle" 
+        type:"Resort" 
      },
      {
         img:'https://images.trvl-media.com/hotels/3000000/2220000/2215100/2215082/c55ae853.jpg?impolicy=resizecrop&rw=455&ra=fit',
@@ -45,7 +46,7 @@ let all_arr=[[
         price:"3,300",
         total:"3,696",
         review:"3.9/5 Wonderful (608 reviews)",
-        type:"Free-airport shuttle" 
+        type:"Resort" 
      },
      {
         img:"https://images.trvl-media.com/hotels/25000000/24410000/24408500/24408483/51f43bae.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -55,7 +56,7 @@ let all_arr=[[
         price:"10,000",
         total:"11,800",
         review:"4.3/5 Wonderful (401 reviews)",
-        type:"Free-airport shuttle" 
+        type:"Resort" 
      },
      {
         img:"https://images.trvl-media.com/hotels/81000000/80590000/80582100/80582018/642bf323.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -125,17 +126,17 @@ let all_arr=[[
         price:"1,892",
         total:"1,970",
         review:"",
-        type:"House" 
+        type:"Resort" 
      },
      {
         img:"https://images.trvl-media.com/hotels/65000000/64160000/64156800/64156744/f8170e3c.jpg?impolicy=resizecrop&rw=455&ra=fit",
-        title:"Remarkable 6-bedroom Farmhouse in South Delhi",
+        title:"Remarkable 6-bedroom FarmResort in South Delhi",
         location:"New Delhi",
         refund:"sleeps16, 6 bedrooms, 4 bathrooms",
         price:"35,456",
         total:"39,710",
         review:"",
-        type:"House" 
+        type:"Resort" 
      },
      {
         img:"https://images.trvl-media.com/hotels/60000000/59060000/59051200/59051143/w2400h1104x0y347-4e3eb93e.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -145,7 +146,7 @@ let all_arr=[[
         price:"1,645",
         total:"1,645",
         review:"",
-        type:"House" 
+        type:"Resort" 
      }
    ],[
       {
@@ -187,7 +188,7 @@ let all_arr=[[
           price:"23,063",
           total:"27,050",
           review:"4.7/5 Exceptional (212 reviews)",
-          type:"Dinner included" 
+          type:"Resort" 
        },
        {
           img:'https://images.trvl-media.com/hotels/1000000/20000/17800/17773/95c36a58.jpg?impolicy=resizecrop&rw=455&ra=fit',
@@ -197,7 +198,7 @@ let all_arr=[[
           price:"16,200",
           total:"19,116",
           review:"4.5/5 Wonderful (997 reviews)",
-          type:"Dinner included" 
+          type:"Resort" 
        },
        {
           img:'https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/0114879f.jpg?impolicy=resizecrop&rw=455&ra=fit',
@@ -207,7 +208,7 @@ let all_arr=[[
           price:"15,500",
           total:"18,296",
           review:"4.5/5 Wonderful (507 reviews)",
-          type:"Dinner included" 
+          type:"Resort" 
        },
        {
           img:'https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/796fe3c1.jpg?impolicy=resizecrop&rw=455&ra=fit',
@@ -350,7 +351,7 @@ let all_arr=[[
         price:"800",
         total:"896",
         review:"",
-        type:"Dinner Included" 
+        type:"Resort" 
      },
   
   ],
@@ -457,7 +458,14 @@ let all_arr=[[
      },
   
   ]]
-   
+ 
+  let searcharr=JSON.parse(localStorage.getItem("search"))||[]
+console.log(searcharr)
+  
+  
+
+  
+
  
 let Mumbai=[
     {
@@ -499,7 +507,7 @@ let Mumbai=[
         price:" 23,063",
         total:" 27,050",
         review:"4.7/5 Exceptional (212 reviews)",
-        type:"Dinner included" 
+        type:"Resort" 
      },
      {
         img:'https://images.trvl-media.com/hotels/1000000/20000/17800/17773/95c36a58.jpg?impolicy=resizecrop&rw=455&ra=fit',
@@ -509,7 +517,7 @@ let Mumbai=[
         price:" 16,200",
         total:" 19,116",
         review:"4.5/5 Wonderful (997 reviews)",
-        type:"Dinner included" 
+        type:"Resort" 
      },
      {
         img:'https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/0114879f.jpg?impolicy=resizecrop&rw=455&ra=fit',
@@ -519,7 +527,7 @@ let Mumbai=[
         price:" 15,500",
         total:" 18,296",
         review:"4.5/5 Wonderful (507 reviews)",
-        type:"Dinner included" 
+        type:"Resort" 
      },
      {
         img:'https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/796fe3c1.jpg?impolicy=resizecrop&rw=455&ra=fit',
@@ -662,7 +670,7 @@ let Manali=[
       price:" 800",
       total:" 896",
       review:"",
-      type:"Dinner Included" 
+      type:"Resort" 
    },
 
 ]
@@ -840,41 +848,14 @@ function Display(data){
         })
     });
 }
-Display(all_arr[0])
+
 
 let sorted=document.getElementById("sort")
 
 sorted.addEventListener("change",function(){
    cr()
 })
-function cr(){
-   container.innerHTML=""
-   let sorted_arr=all_arr[1].sort(function(a,b){
-      const nameA=a.title.toUpperCase()
-      const nameB=b.title.toUpperCase()
-      if(sorted.value===""){
-         return all_arr[1]
-      }
-      else if(sorted.value==="high"){
-         if(nameA<nameB){
-            return -1
-         }
-         if(nameB<nameA){
-            return 1
-         }
-      }
-      else if(sorted.value==="low"){
-         if(nameA<nameB){
-            return 1
-         }
-         if(nameB<nameA){
-            return -1
-         }
-      }
-     
-   })
-   Display(sorted_arr)
-}
+
   
    /*if(sorted.value==""){
       return (all_arr[0])
@@ -888,3 +869,64 @@ function cr(){
 
   
   
+let sorted_arr=[]
+
+     let x=searcharr[0].toUpperCase()
+     if(x==="DELHI"){
+      sorted_arr=all_arr[0]
+      Display(all_arr[0])
+     }
+     else if(x==="MUMBAI"){
+      sorted_arr=all_arr[1]
+      Display(all_arr[1])
+     }
+     else if(x==="MANALI"){
+      sorted_arr=all_arr[2]
+      Display(all_arr[2])
+     }
+     else if(x==="GOA"){
+      sorted_arr=all_arr[3]
+      Display(all_arr[3])
+     }
+     else{
+      alert(`${x} City Data not found`)
+      window.location.href="./"
+     }
+
+
+     
+
+     function cr(){
+      container.innerHTML=""
+      sorted_arr.sort(function(a,b){
+         const nameA=a.title.toUpperCase()
+         const nameB=b.title.toUpperCase()
+         if(sorted.value===""){
+            return searcharr[0]
+         }
+         else if(sorted.value==="high"){
+            if(nameA<nameB){
+               return -1
+            }
+            if(nameB<nameA){
+               return 1
+            }
+         }
+         else if(sorted.value==="low"){
+            if(nameA<nameB){
+               return 1
+            }
+            if(nameB<nameA){
+               return -1
+            }
+         }
+        
+      })
+      
+      Display(sorted_arr)
+   }
+
+
+
+   
+   

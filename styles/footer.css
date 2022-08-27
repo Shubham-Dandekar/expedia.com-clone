@@ -1,0 +1,92 @@
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  padding-bottom: 20px;
+}
+
+#footer ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: blue;
+  font-size: 13px;
+}
+
+#footer > div > p {
+  font-weight: 500;
+}
+
+#disclaimer {
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#disclaimer p {
+  margin-bottom: 7px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  #flogo {
+    grid-area: flogo;
+  }
+  #company {
+    grid-area: company;
+  }
+  #explore {
+    grid-area: explore;
+  }
+  #policies {
+    grid-area: policies;
+  }
+  #help {
+    grid-area: help;
+  }
+  #footer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "flogo flogo flogo flogo"
+      "company explore policies help";
+  }
+}
+
+@media (max-width: 576px) {
+  #flogo {
+    grid-area: flogo;
+  }
+  #company {
+    grid-area: company;
+  }
+  #explore {
+    grid-area: explore;
+  }
+  #policies {
+    grid-area: policies;
+  }
+  #help {
+    grid-area: help;
+  }
+  #footer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "flogo flogo"
+      "company explore"
+      "policies help";
+  }
+}

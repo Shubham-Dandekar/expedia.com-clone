@@ -17,7 +17,7 @@ function Display(data){
         title.className="title"
         let location=document.createElement("p")
         location.style.color="grey"
-        location.innerText=ele.title
+        location.innerText=ele.location
         location.className="loc"
         let refund=document.createElement("p")
         refund.innerText=ele.refund
@@ -40,5 +40,17 @@ function Display(data){
         check.innerText=ele.total
     });
 }
+let ch=document.getElementById("ch")
+let text=document.getElementById("text")
+let email=document.getElementById("email")
+let num=document.getElementById("number")
 
+ch.addEventListener("click",function(){
+    if(text.value=="" || email.value==="" || num.value===""){
+        alert("Please fill required details")
+    }
+    else{
+        alert("Booking Successfull")
+    }
+})
 Display(detail_arr)
