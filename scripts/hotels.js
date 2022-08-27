@@ -458,6 +458,7 @@ let all_arr=[[
   
   ]]
    
+ 
 let Mumbai=[
     {
         img:'https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/6000000/5310000/5301700/5301691/42bd346d_b.jpg',
