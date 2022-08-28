@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan a summer city gateway | Expedia</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.expedia.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/1b92080d15.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/summer.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/popup.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <img
+        src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2"
+        id="logo"
+      />
+      <ul>
+        <li>
+          <a href="#">Travel more </a>
+          <div id="submenu">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/ios-filled/20/000000/hotel-star.png"
+                    class="sub-logo"
+                  />Stays</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-flight-interface-kiranshastry-solid-kiranshastry.png"
+                    class="sub-logo"
+                  />
+                  Flights</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/pastel-glyph/20/000000/car--v1.png"
+                    class="sub-logo"
+                  />Cars</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/external-wanicon-lineal-wanicon/20/000000/external-suitcase-travel-wanicon-lineal-wanicon.png"
+                    class="sub-logo"
+                  />Packages</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/dotty/20/000000/two-tickets.png"
+                    class="sub-logo"
+                  />Things to do</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/external-glyph-andi-nur-abdillah/20/000000/external-Cruiser-military-(glyph)-glyph-andi-nur-abdillah.png"
+                    class="sub-logo"
+                  />Cruises</a
+                >
+              </li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Groups & meetings</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div id="menu">
+        <div>
+          <img
+            src="https://img.icons8.com/ios/18/000000/globe--v1.png"
+            class="sub-logo"
+          />
+          <a href="#" id="display-language">English</a>
+        </div>
+        <div><a href="#">List your property</a></div>
+        <div><a href="#">Support</a></div>
+        <div><a href="#">Trips</a></div>
+        <div>
+          <a href="./signin.html"
+            ><img
+              src="https://img.icons8.com/material-sharp/20/000000/bell.png"
+          /></a>
+        </div>
+        <div id="signin">
+          <ul>
+            <li>
+              <a href="signin.html">Sign in</a>
+              <div id="log-out">
+                <ul>
+                  <li>Log out</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu_alt1">
+        <img
+          src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/25/000000/external-suitcase-interface-kiranshastry-solid-kiranshastry.png"
+        />
+        <a href="./signin.html">
+          <img src="https://img.icons8.com/material-sharp/25/000000/bell.png"
+        /></a>
+        <img
+          src="https://img.icons8.com/metro/22/000000/gender-neutral-user.png"
+        />
+      </div>
+    </div>
+    <div id="pop-up">
+      <div id="display">
+        <button onclick="closepopup()">X</button>
+        <h3>Display settings</h3>
+      </div>
+      <div id="dis">
+        <img
+          src="https://www.gyorbike.hu/media/ikon/ikon-informacio-dblue.png"
+        />
+        <p>
+          You can only access your trip information and Expedia Rewards points
+          from the Expedia site you booked on.
+        </p>
+      </div>
+      <form action="">
+        <select id="region">
+          <option value="">India</option>
+        </select>
+        <select id="language">
+          <option value="">English</option>
+        </select>
+        <select id="currency">
+          <option value="">INR ₹</option>
+        </select>
+        <button onclick="closepopup()">Save</button>
+      </form>
+    </div>
+
+    <div id="header">
+      <div id="head_line">
+        <h1>Member-only deals on summer trips to the city</h1>
+      </div>
+      <div id="head_image">
+        <img
+          src="https://a.travel-assets.com/travel-assets-manager/ceorg-1424/POSa-LP-D-1920x400.jpg"
+          alt=""
+        />
+        <div id="dine">
+          <p>
+            Dine al fresco with friends. Walk to a nearby street festival. See
+            some live music outdoors. Summer in the city is finally back, and
+            with Member Prices on select hotels you can get back to doing the
+            things you really love for even less.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="hotels_list">
+      <div id="list_heading">
+        <ul>
+          <li><a href="#">City hotels with Member Prices</a></li>
+          <li><a href="#">Top summer destinations</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="city_hotels"></div>
+    <div id="summer_destinations"></div>
+    <div class="hotel_list">
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/2000000/1830000/1823800/1823707/2e002832.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Trident Bandra Kurla Mumbai</h3>
+          <p>Mumbai</p>
+          <p><span>4.5/5</span> (718 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs10,359</p>
+            <h2>Rs9,323</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/20000000/19430000/19421900/19421867/7cbd9456.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Club One - Virar</h3>
+          <p>Mumbai</p>
+          <p><span>3.8/5</span> (8 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs4,520</p>
+            <h2>Rs4,068</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/9000000/8200000/8195800/8195778/cb9bcfc2.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Oxford Golf Resort</h3>
+          <p>Pune</p>
+          <p><span>4.1/5</span> (16 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs9,927</p>
+            <h2>Rs7,127</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/6000000/5280000/5275900/5275897/4b15108d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Radisson Blu Kaushambi Delhi NCR</h3>
+          <p>Delhi</p>
+          <p><span>4.1/5</span> (126 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs5,200</p>
+            <h2>Rs4,680</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/3000000/2820000/2814500/2814439/b88c255c.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Vivanta Surajkund, NCR</h3>
+          <p>Delhi</p>
+          <p><span>4.4/5</span> (273 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs6,750</p>
+            <h2>Rs6,075</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/1000000/470000/465100/465005/13a4747e.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Taj Palace, New Delhi</h3>
+          <p>Delhi</p>
+          <p><span>4.5/5</span> (1000 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+            <div></div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs11,756</p>
+            <h2>Rs10,581</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/11000000/10430000/10429600/10429577/98b6d6bf.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Oakwood Residence Kapil Hyderabad</h3>
+          <p>Hyderabad</p>
+          <p><span>4.3/5</span> (50 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs9,930</p>
+            <h2>Rs6,956</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/1000000/530000/526400/526340/f5764d77.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Taj Fort Aguada Resort & Spa, Goa</h3>
+          <p>Goa</p>
+          <p><span>4.5/5</span> (327 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs24,000</p>
+            <h2>Rs21,150</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+      <div class="hotels">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/1000000/560000/551400/551355/45158000.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>The Oberoi Amarvilas, Agra</h3>
+          <p>Agra</p>
+          <p><span>4.7/5</span> (244 reviews)</p>
+        </div>
+        <div>
+          <div class="line"></div>
+          <div>
+            <p>10% off</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p><i class="fa fa-info"></i>Rs30,000</p>
+            <h2>Rs27,000</h2>
+          </div>
+        </div>
+        <div>
+          <p>Thu, 22 Sep - Sat, 24 Sep</p>
+          <p>per night</p>
+        </div>
+      </div>
+    </div>
+    <div id="more_button">
+      <button>Show more</button>
+    </div>
+    <div id="booking">
+      <h1>Have somewhere in mind? Let's go</h1>
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" id="going_to" placeholder="        Going to" />
+        <input type="date" id="check_in" placeholder="Select date" />
+        <input type="date" id="check_out" placeholder="Select date" />
+        <i class="fa-solid fa-user"></i>
+        <input type="number" id="guests" placeholder="       Guests" />
+        <button>Search</button>
+      </div>
+    </div>
+    <div id="terms_conditions">
+      <h3>Terms & Conditions</h3>
+      <p>
+        These offers are available to Expedia Rewards members and Expedia app
+        users. Must be logged in.
+      </p>
+      <p>
+        The discount will be applied to the price of selected hotels (excluding
+        applicable taxes and other fees).
+      </p>
+      <p>
+        Prices displayed include the promotional discount and are per room per
+        night based on two people sharing a room.
+      </p>
+      <p>
+        Blackout periods may apply and a minimum hotel stay may be required.
+      </p>
+      <p>
+        Please check individual hotel for details. Offers are subject to limited
+        availability and may be discontinued without notice
+      </p>
+      <p>Expedia’s usual booking <a href="/">terms and conditions apply</a>.</p>
+      <p>Promoter: 1111 Expedia Group Way W., Seattle, WA 98119, USA.</p>
+      <p>
+        COVID-19 travel alert: Please remember to check government advisories
+        before booking and traveling.
+      </p>
+    </div>
+    <div id="footer">
+      <a href="./about.html" target="_blank" id="flogo">
+        <img
+          src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+        />
+      </a>
+      <div id="company">
+        <p>Company</p>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">List your property</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Advertising</a></li>
+        </ul>
+      </div>
+      <div id="explore">
+        <p>Explore</p>
+        <ul>
+          <li><a href="#">United States of America travel guide</a></li>
+          <li><a href="#">Hotels in United States of America</a></li>
+          <li><a href="#">Vacation rentals in United States of America</a></li>
+          <li><a href="#">Vacation packages in United States of America</a></li>
+          <li><a href="#">Domestic flights</a></li>
+          <li><a href="#">Car rentals in United States of America</a></li>
+          <li><a href="#">All accommodation types</a></li>
+        </ul>
+      </div>
+      <div id="policies">
+        <p>Policies</p>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Vrbo terms and conditions</a></li>
+          <li><a href="#">Expedia Rewards Terms</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Do not sell my personal information</a></li>
+        </ul>
+      </div>
+      <div id="help">
+        <p>Help</p>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Cancel your flight</a></li>
+          <li><a href="#">Refund timelines, policies & processes</a></li>
+          <li><a href="#">Use an Expedia coupon</a></li>
+          <li><a href="#">International travel documents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="disclaimer">
+      <p>Expedia, Inc. is not responsible for content on external Web sites.</p>
+      <p>
+        © 2022 Expedia, Inc., an Expedia Group company. All rights reserved.
+        Expedia and the Airplane Logo are trademarks or registered trademarks of
+        Expedia, Inc. CST# 2029030-50.
+      </p>
+    </div>
+  </body>
+</html>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/popup.js"></script>

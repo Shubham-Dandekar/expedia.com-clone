@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Expedia Travel: Vacation Homes, Hotels, Car Rentals, Flights &amp; More
+    </title>
+    <link
+      rel="shortcut icon"
+      href="https://www.expedia.com/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./styles/vacation.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+  </head>
+
+  <body>
+    <!-- body -->
+    <div id="navbar">
+      <a href="./">
+        <img
+          src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2"
+          id="logo"
+      /></a>
+      <ul>
+        <li>
+          <a href="#">Travel more </a>
+          <div id="submenu">
+            <ul>
+              <li>
+                <a href="./stays.html"
+                  ><img
+                    src="https://img.icons8.com/ios-filled/20/000000/hotel-star.png"
+                    class="sub-logo"
+                  />Stays</a
+                >
+              </li>
+              <li>
+                <a href="./flights.html"
+                  ><img
+                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-flight-interface-kiranshastry-solid-kiranshastry.png"
+                    class="sub-logo"
+                  />
+                  Flights</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/pastel-glyph/20/000000/car--v1.png"
+                    class="sub-logo"
+                  />Cars</a
+                >
+              </li>
+              <li>
+                <a href="./vacation.html"
+                  ><img
+                    src="https://img.icons8.com/external-wanicon-lineal-wanicon/20/000000/external-suitcase-travel-wanicon-lineal-wanicon.png"
+                    class="sub-logo"
+                  />Packages</a
+                >
+              </li>
+              <li>
+                <a href="./things.html"
+                  ><img
+                    src="https://img.icons8.com/dotty/20/000000/two-tickets.png"
+                    class="sub-logo"
+                  />Things to do</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/external-glyph-andi-nur-abdillah/20/000000/external-Cruiser-military-(glyph)-glyph-andi-nur-abdillah.png"
+                    class="sub-logo"
+                  />Cruises</a
+                >
+              </li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Groups & meetings</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div id="menu">
+        <div>
+          <img
+            src="https://img.icons8.com/ios/18/000000/globe--v1.png"
+            class="sub-logo"
+          />
+          <a href="#" id="display-language">English</a>
+        </div>
+        <div><a href="#">List your property</a></div>
+        <div><a href="#">Support</a></div>
+        <div><a href="#">Trips</a></div>
+        <div>
+          <a href="./signin.html"
+            ><img
+              src="https://img.icons8.com/material-sharp/20/000000/bell.png"
+          /></a>
+        </div>
+        <div id="signin">
+          <ul>
+            <li>
+              <a href="signin.html">Sign in</a>
+              <div id="log-out">
+                <ul>
+                  <li>Log out</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu_alt1">
+        <img
+          src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/25/000000/external-suitcase-interface-kiranshastry-solid-kiranshastry.png"
+        />
+        <a href="./signin.html">
+          <img src="https://img.icons8.com/material-sharp/25/000000/bell.png"
+        /></a>
+        <img
+          src="https://img.icons8.com/metro/22/000000/gender-neutral-user.png"
+        />
+      </div>
+    </div>
+
+    <div>
+      <h1 id="vacc">Search vacation packages</h1>
+      <p id="vacc-p">Choose one or more items to build your trip:</p>
+      <br />
+      <div>
+        <button id="selected1">Stay added</button>
+        <button id="selected2">Flight added</button>
+        <button id="car">Add a car</button>
+      </div>
+
+      <br />
+      <button class="loca1">
+        <img
+          id="loc"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAXVBMVEX///8AAADV1dVRUVHDw8Ovr6/k5OT19fXKysp3d3f7+/ve3t41NTVoaGi4uLh/f38rKyvq6uqNjY0gICCoqKhubm6fn58XFxeVlZWFhYVJSUlYWFhhYWE+Pj4bGxtCgBc2AAADFUlEQVRoge2aW3uCMAyGrZxEEUXnATf9/z9zY5vjkC+lmJTd9L3O08/WJE1SFotAIBAIBAIzss425bnO87w+l5tsPaNyXEemS1TH8wivcoPIV96Vkz1UbtgnXpXjglVuKPwdfbq1KjdsUz/S5WVU2phL6UN656DcsNOXjsZVf4mUlbObs7Qxt0xV2n3X3zvXFP+YJG3Mh550PVHamFpLOp4sbYxSlslekDZG5y8/vaR90pBevSRtjMK9tp4WXi2RvKJgHW2/K+NVXO7YS1Xubsy28+WfxRIXE/LcusTLVj2jCv/AJbOmK/D2uhKzKzIT3mhrVKicgeEZ2BUyb0MBdoCWB2ApCzNwlpwLgf+c/jdTANc250HAK28ibboenytB7pVIp+7bhhuXVK3U1Y68766PxFribAlZLbdY0/wm6VTeyGootp/QGH9T1bbthJ5S0NbQtqUqmgQl2iVZbWuxpm2qpDEEV4klvqmxJL4ruhy/FXpIpmKNHaDLvbO279RYIo0aMa4EBEWlrC2jjm4KfJAVqHAkbo5LRbwb1KoKi0VUr6ErHDVOhUwalmG05cDNCy7s3NmgRYeRBqKrYSPUBsnqm3vyrEnS5I5NbCnQDdyYfPGITofr4RQ9OANpW7Jwn6sN0ZizgbzqhCifPkHtzji24moCLnPUIRcd6f+cM00f7WkO95gEY0GcVlpgZrUgzaZdMvtbxZBCdZA8zd2Un02mDBdVRoodpmQ3lYzWxT27KWW0Lux9NeChL81fpgMUrk4KM7ocYBsOvE7FP4W27NUd7QemLOvh5VmwAXQ9A/iOSQoYeQ3w9BTbMBbkHkK7ZeT926f0SJB7Ce0WW5D7Ce2WjC8cL6q3NoIPcm+h3cJ99CBvv8ZJ8alfPIZ2C5iDGOl8wxnU6Gt/5MCBynXFgtwOLdc1C/IRhq8Tx/mkyZzV/zdcHfqp1Xcy7dOrn3zVSRzd1DpDMu3TptY5kmmftkma+cQbni8zfr8UZIhmTaZ9fqrWWa4vSvMmJXteF3A39/+S/qpaPVemNmbN44FAIBAIBH75BHDwHAwJjid9AAAAAElFTkSuQmCC"
+        />Leaving From</button
+      ><button class="arr">
+        <img
+          id="arrow"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAMAAAAvpwKjAAAAY1BMVEX///8AAAC6urqMjIzU1NTi4uLm5ub4+PjY2NilpaWDg4Pw8PBGRkYcHBzr6+u1tbVBQUEVFRUhISFwcHCvr69LS0vBwcGSkpJiYmI6OjrLy8t2dnZTU1OZmZkKCgpnZ2csLCykthSzAAACF0lEQVR4nO3aaZKCQAwF4H6KrOKCguCC3v+Ug8xYsvywCN0mNZV3AOorG0ISNEaj0Wg0Go1Go9H806w8bkEbr464Cc94wCHhRrQMrENuRctAehTBAJaBCAZyXwQDWSGCAZxkMFBuRDBQnUUwAK6SGvYZuMwpqcF2QcxtwMBuRkldDS82I/utCAYQU0uqXQauxJJqmYFsIYIB3CgHY59BKqkOGKimd6kuGISS6oaBWATjPvX2cMKY3hg6YFC6MfuMnPKGs86YenM6YdTEucUugzzFWWXcyQ3YJl4ScxkpWNrRYS+a8jTng86ca8nQZ7BN1F3Gg2+M7TB2KzZFh0ErnLYZvAufP0bOeCBvxuQGxwVDwGq0YaSs66YXo2ReArbxTq4VwVLCWj65gn8JbYo9BDCiZzngZvglBDDCNQQwjq/XFSvj3eUyMsIKAhiLB/gZQdzrcJkYmzsEMJ6Fs5uahRFhmAt1pIzpY2w5UswI9QOgt7OpoDLGB8LAGDynTIzXm4yXUaTWFdMZ9g+EwlhZfU7JDCe/BeFQbD+qRIbxqs9X/QLDchknM0ww+rTMwmh6rkwEw/hXEQzbVYz+T5/t/vPVv8Aw4ajluBXU/1PMWXokw88BXANCJINhzpUIRr+kco7SJxkMU2QiGMbPRTBMsBTBMOaYimD8Dg38DJMcRDCaklpLWFY3XSrzJyONRqPRaDQajUbjLj9LLhr2DwldCgAAAABJRU5ErkJggg=="
+        />
+      </button>
+      <button class="loca2">
+        <img
+          id="loc"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAXVBMVEX///8AAADV1dVRUVHDw8Ovr6/k5OT19fXKysp3d3f7+/ve3t41NTVoaGi4uLh/f38rKyvq6uqNjY0gICCoqKhubm6fn58XFxeVlZWFhYVJSUlYWFhhYWE+Pj4bGxtCgBc2AAADFUlEQVRoge2aW3uCMAyGrZxEEUXnATf9/z9zY5vjkC+lmJTd9L3O08/WJE1SFotAIBAIBAIzss425bnO87w+l5tsPaNyXEemS1TH8wivcoPIV96Vkz1UbtgnXpXjglVuKPwdfbq1KjdsUz/S5WVU2phL6UN656DcsNOXjsZVf4mUlbObs7Qxt0xV2n3X3zvXFP+YJG3Mh550PVHamFpLOp4sbYxSlslekDZG5y8/vaR90pBevSRtjMK9tp4WXi2RvKJgHW2/K+NVXO7YS1Xubsy28+WfxRIXE/LcusTLVj2jCv/AJbOmK/D2uhKzKzIT3mhrVKicgeEZ2BUyb0MBdoCWB2ApCzNwlpwLgf+c/jdTANc250HAK28ibboenytB7pVIp+7bhhuXVK3U1Y68766PxFribAlZLbdY0/wm6VTeyGootp/QGH9T1bbthJ5S0NbQtqUqmgQl2iVZbWuxpm2qpDEEV4klvqmxJL4ruhy/FXpIpmKNHaDLvbO279RYIo0aMa4EBEWlrC2jjm4KfJAVqHAkbo5LRbwb1KoKi0VUr6ErHDVOhUwalmG05cDNCy7s3NmgRYeRBqKrYSPUBsnqm3vyrEnS5I5NbCnQDdyYfPGITofr4RQ9OANpW7Jwn6sN0ZizgbzqhCifPkHtzji24moCLnPUIRcd6f+cM00f7WkO95gEY0GcVlpgZrUgzaZdMvtbxZBCdZA8zd2Un02mDBdVRoodpmQ3lYzWxT27KWW0Lux9NeChL81fpgMUrk4KM7ocYBsOvE7FP4W27NUd7QemLOvh5VmwAXQ9A/iOSQoYeQ3w9BTbMBbkHkK7ZeT926f0SJB7Ce0WW5D7Ce2WjC8cL6q3NoIPcm+h3cJ99CBvv8ZJ8alfPIZ2C5iDGOl8wxnU6Gt/5MCBynXFgtwOLdc1C/IRhq8Tx/mkyZzV/zdcHfqp1Xcy7dOrn3zVSRzd1DpDMu3TptY5kmmftkma+cQbni8zfr8UZIhmTaZ9fqrWWa4vSvMmJXteF3A39/+S/qpaPVemNmbN44FAIBAIBH75BHDwHAwJjid9AAAAAElFTkSuQmCC"
+        />Going to
+      </button>
+      <button id="date">Departing</button> <button id="date">Returning</button>
+      <br />
+      <br />
+
+      <input id="check" type="checkbox" />
+      <p id="acc">I only need accommodations for part of my trip</p>
+      <br />
+      <div>
+        <button id="search">Search</button>
+      </div>
+    </div>
+    <br />
+
+    <div id="box">
+      <div id="box-1">
+        <div>
+          <img
+            src="https://laquatsa.com/wp-content/uploads/2021/06/Picture-Image-1-2.jpg"
+          />
+        </div>
+        <div>
+          <h3>Unwind in the Dominican Replublic</h3>
+          <p>
+            Escape to a vibrant world where everything is included, exclusively
+            for adults
+          </p>
+        </div>
+      </div>
+      <div id="box-2">
+        <div>
+          <div>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>Hilton Playa del Carmen</h3>
+            <p>Make a splash with all-inclusive all-suite accomodations</p>
+          </div>
+        </div>
+        <div id="box-2-div-2">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQuffQyAFO7BgUsoPJQXCcDcJOPAxI25wbg&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>All-inclusive for all ages</h3>
+            <p>Last minute getaways to Hilton La Romana</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div id="des">
+      <h1>Top Vacation Destinations</h1>
+      <br />
+      <p>
+        Tick one more destination off of your bucket list with one of our most
+        popular vacations in 2022
+      </p>
+      <div id="grid">
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Puerto_Rico_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+          />
+          <p>Puerto Rico</p>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Las_Vegas__BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+          />
+          <p>Las Vegas</p>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Greece_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+          />
+          <p>Greece</p>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Italy_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+          />
+          <p>Italy</p>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Hawaii_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+          />
+          <p>Hawai</p>
+        </div>
+        <div>
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Jamaica_BEX_US.jpeg?impolicy=fcrop&w=300&h=300&q=mediumHigh"
+          />
+          <p>Jamaica</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div id="summer">
+      <h1>Find your Perfect Summer Vacation</h1>
+      <br />
+      <p>
+        Works off, the Sun is out and the time is right, so what are you waiting
+        for? we are here to provide you with our hottest vacation destinations.
+      </p>
+    </div>
+    <div id="grid-2">
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Beach_Holidays_US.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
+        />
+        <h4>Beach Vacations</h4>
+        <p>
+          Build a beach vacation package to suit your every need. Life is better
+          on the beach!
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/all-inclusive_holidays_US.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
+        />
+        <h4>All Inclusive Vacations</h4>
+        <p>
+          All your needs are catered for with an all-inclusive vacation package.
+          All the extras that make a lifetime of memories.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://forever.travel-assets.com/flex/flexmanager/images/2022/06/08/Family_holidays_US_3_.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
+        />
+        <h4>Family Vacations</h4>
+        <p>
+          Great offers for the entire family. Find peace of mind when you book a
+          family vacation package with Expedia.
+        </p>
+      </div>
+    </div>
+    <br />
+    <div id="pack">
+      <h2>Find your next vacation package</h2>
+      <div id="grid-3">
+        <div>
+          <h5>Are vacation packages worth it?</h5>
+          <p>
+            Vacation packages can save a lot on your 2022 vacation, as discounts
+            may be available when booking multiple aspects of your vacation at
+            once, such as the hotel and the flight. Flights and hotel packages
+            can include a car rental at your destination. Check our package deal
+            today on Expedia!
+          </p>
+          <br />
+          <h5>How much do vacation packages cost?</h5>
+          <p>
+            The exact cost of a vacation package varies based on various factors
+            such as destination, accommodation quality, flight class, and even
+            the time of year you visit. The type of vacation you embark on can
+            also affect cost with options like family packages and all-inclusive
+            packages. You can search for your specific price range, too, with
+            plenty of vacations under $1,000, for example.
+          </p>
+          <br />
+          <h5>How to choose your vacation package?</h5>
+          <p>
+            To find the best vacation package, you'll need to consider the type
+            of vacation you're looking to enjoy and the destination. Using the
+            site's search function, you can find a wide variety of packages
+            available for your chosen vacation location, while search filters
+            can narrow down options based on vacation type. Browse our deals
+            now.
+          </p>
+          <br />
+          <h5>How to find cheap vacation packages?</h5>
+          <p>
+            If you're looking to save, be sure to set filters for any budget
+            limitations you may have in your search. Additionally, you can sort
+            by price to automatically put the cheapest options first in your
+            search results. Weekend getaway packages can be relatively
+            inexpensive as well if you are looking for cheap getaways.
+          </p>
+          <br />
+          <h5>How to vacation on a budget?</h5>
+          <p>
+            Budget-friendly travel is easy when you book with Expedia, as we can
+            help you keep prices low via search filters, but that's not all.
+            There are general trends to keep in mind regarding prices, such as
+            travel packages generally being cheaper during the off-season of
+            your vacation destination. Additionally, the higher the quality
+            amenities you opt for, the higher the price typically is.
+          </p>
+          <br />
+          <h5>How to get great vacation deals?</h5>
+          <p>
+            Vacation deals are common with Expedia, as we offer plenty of
+            discounts on great packages, with packages already being a deal
+            compared to booking hotels and flights separately. Plus, Expedia
+            Rewards members have access to exclusive travel deals that other
+            visitors to Expedia can't take advantage of.
+          </p>
+          <br />
+          <h5>How to find last-minute vacation deals?</h5>
+          <p>
+            To book last-minute vacation trips, simply input your travel dates
+            into the search and see what's available at that time for your
+            destination. You can still filter based on virtually anything you
+            can imagine, including amenities, price, star rating, and more.
+          </p>
+          <br />
+          <h5>Where should I go on vacation?</h5>
+          <p>
+            Booking a Hawaii vacation package is especially popular with all
+            sorts of travelers, whether it's families or couples, and Disney
+            World packages have much to offer for families. Consider the kind of
+            vacation you're looking for to determine the perfect destination.
+          </p>
+          <br />
+          <h5>What are some of the best vacation spots?</h5>
+          <p>
+            Top vacation spots include cheap Caribbean vacations and European
+            vacation packages. With rich culture, history, and stunning natural
+            beauty, a vacation package to these destinations can provide an
+            unforgettable adventure.
+          </p>
+          <br />
+          <h5>Where to go on a vacation in the US?</h5>
+          <p>
+            Staying in the US still offers easy access to great vacation places
+            with Vegas packages and a Grand Canyon vacation being popular
+            choices among other options. Whether you’re seeking the thrills of
+            the Vegas Strip or the majestic views of the Grand Canyon, browse
+            your options today.
+          </p>
+        </div>
+        <div>
+          <h5>Where to go on vacation on a budget?</h5>
+          <p>
+            Cheap vacation ideas can still take you to a variety of great cheap
+            vacation destinations, including Yellowstone vacations and Glacier
+            National Park vacations. Parks and outdoor experiences tend to be
+            free, so national park vacations are excellent for a budget-friendly
+            trip.
+          </p>
+          <br />
+          <h5>What are some great all-inclusive vacation packages?</h5>
+          <p>
+            All-inclusive vacations to the Bahamas and all-inclusive vacations
+            to Cancun are some of the best options available, putting you in a
+            Caribbean paradise. However, all-inclusive vacations are more varied
+            than you might think, with worldwide options.
+          </p>
+          <br />
+          <h5>What are the best destinations for a family vacation?</h5>
+          <p>
+            Traveling with kids means you'll need to find fun for the whole
+            family, and Orlando vacation packages can put you and your little
+            ones in the world's theme park capital. Of course, a vacation
+            package to Anaheim offers a similar experience on the West coast.
+          </p>
+          <br />
+          <h5>Where should I go on vacation this summer?</h5>
+          <p>
+            If you're looking to embrace the season, head to the beach with a
+            summer vacation package to Destin. Of course, you may be more
+            interested in escaping the heat with something like a vacation
+            package to Vancouver.
+          </p>
+          <br />
+          <h5>How to find cheap beach vacations?</h5>
+          <p>
+            In your search, you can apply search filters for beach trip packages
+            and sort your results by price to see the cheap vacation options
+            first. With those standards, you can find amazing cheap trips with
+            beach vacation packages like vacation packages to Panama City and
+            vacation packages to Myrtle Beach.
+          </p>
+          <br />
+          <h5>What are some great couples' vacations?</h5>
+          <p>
+            Traveling with your partner means a more romantic adventure, which
+            is easy when you book vacation packages to Honolulu. However, you
+            can always opt for the classics and get a vacation package to Paris.
+            Even a simple 3-day cheap getaway can be suitable.
+          </p>
+          <br />
+          <h5>What are the best destinations for a luxury vacation?</h5>
+          <p>
+            One of the best destinations for luxury is a Las Vegas vacation
+            package, as the city was essentially designed to make visitors feel
+            luxurious. Of course, a Lake Tahoe vacation package can be just as
+            fulfilling as a more outdoor-oriented experience. Golf vacations
+            also tend to be quite elegant.
+          </p>
+          <br />
+          <h5>How to find great Christmas vacation packages?</h5>
+          <p>
+            To find an excellent package for a Christmas vacation, simply put
+            your travel dates into the search and discover what's available.
+            Vacation packages to New York and vacation packages to Chicago are
+            trendy around Christmas.
+          </p>
+          <br />
+          <h5>Where to get ski vacation packages?</h5>
+          <p>
+            Ski vacation packages are readily available on Expedia, including
+            vacation packages to Aspen, vacation packages to Vail, and packages
+            to other notable ski resorts. Check out the deals now and book your
+            next ski vacation today.
+          </p>
+          <br />
+          <h5>Can I cancel my vacation package with Expedia?</h5>
+          <p>
+            Yes, you can cancel your vacation package via your itinerary page on
+            Expedia or by contacting customer service. Remember that some
+            packages are fully refundable, but the details vary based on each
+            unique booking. A fully refundable package may depend on how far out
+            from the travel dates you're canceling and what airline you are
+            travelling with.
+          </p>
+          <br />
+          <h5>Why should I book my vacation package with Expedia?</h5>
+          <p>
+            Booking with Expedia makes it easy to plan your entire vacation in
+            advance. Vacation packages with airfare included can also feature a
+            rental car and even activities in some cases, with discounts
+            typically coming with booking more than one aspect of your trip at a
+            time. Expedia Rewards members can accrue points with every eligible
+            purchase that can be put toward subsequent visits. Membership is
+            free, so don't hesitate to join.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div>
+      <img
+        id="img-2"
+        src="https://tpc.googlesyndication.com/simgad/7814626114450818176?"
+      />
+    </div>
+    <br />
+
+    <div id="explore">
+      <h1>Explore, discover, and save</h1>
+      <br />
+      <div>
+        <img
+          id="explore_img-1"
+          src="https://images.squarespace-cdn.com/content/v1/5c366aecec4eb74ac5a2e0a5/1628152651772-NZXYRSH5DXLJNE1YGWN7/_DSC8877a.jpg?format=1500w"
+        />
+        <h4>Labor Day in Playa del Carmen</h4>
+        <p>A boutique adult all-inclusive retreat just steps from 5th Avenue</p>
+        <img
+          id="explore_img-2"
+          src="data:image/jpeg;base64,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"
+        />
+      </div>
+    </div>
+    <br />
+    <div id="qr">
+      <div>
+        <img
+          id="qr-img"
+          src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg"
+        />
+      </div>
+      <div id="text">
+        <h2>Our app takes you further</h2>
+
+        <p>
+          When you book on the app you can save up to 25% on select hotels while
+          earning double the points with every booking. With these app deals
+          you'll save even more on trips, and that means you can take more
+          trips, and manage it all on the go.
+        </p>
+        <br />
+        <h3>Text yourself a download link for easy access</h3>
+
+        <button id="btn-1">Country code</button
+        ><input type="number" placeholder="Phone number" /><button id="btn-2">
+          Get the app
+        </button>
+
+        <p>
+          By providing your number, you agree to receive a one-time automated
+          text message with a link to get the app. Standard text message rates
+          may apply.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_BNA_HP.png"
+        />
+        <p>Scan the QR code</p>
+      </div>
+    </div>
+    <br />
+    <div id="text-2">
+      <p>Explore a world of travel with Expedia</p>
+      <p>See our travel options</p>
+    </div>
+    <br />
+    <!-- footer -->
+
+    <div id="footer">
+      <img
+        src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+      />
+      <div>
+        <p>Company</p>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">List your property</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Advertising</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Explore</p>
+        <ul>
+          <li><a href="#">United States of America travel guide</a></li>
+          <li><a href="#">Hotels in United States of America</a></li>
+          <li><a href="#">Vacation rentals in United States of America</a></li>
+          <li><a href="#">Vacation packages in United States of America</a></li>
+          <li><a href="#">Domestic flights</a></li>
+          <li><a href="#">Car rentals in United States of America</a></li>
+          <li><a href="#">All accommodation types</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Policies</p>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Vrbo terms and conditions</a></li>
+          <li><a href="#">Expedia Rewards Terms</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Do not sell my personal information</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Help</p>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Cancel your flight</a></li>
+          <li><a href="#">Refund timelines, policies & processes</a></li>
+          <li><a href="#">Use an Expedia coupon</a></li>
+          <li><a href="#">International travel documents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="disclaimer">
+      <p>Expedia, Inc. is not responsible for content on external Web sites.</p>
+      <p>
+        © 2022 Expedia, Inc., an Expedia Group company. All rights reserved.
+        Expedia and the Airplane Logo are trademarks or registered trademarks of
+        Expedia, Inc. CST# 2029030-50.
+      </p>
+    </div>
+  </body>
+</html>
+<script src="scripts/vacation.js"></script>
+<script src="./scripts/navbar.js"></script>
