@@ -135,6 +135,10 @@
 }
 
 @media (max-width: 576px) {
+  #logo {
+    margin-left: 0;
+  }
+
   #menu {
     display: none;
   }
@@ -147,6 +151,5 @@
     justify-content: flex-end;
     gap: 30px;
     width: 72%;
-    margin-right: 80px;
   }
 }
