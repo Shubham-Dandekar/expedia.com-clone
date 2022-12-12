@@ -12,4 +12,4 @@ Shubham Dandekar, Giri Reddy, Dikshant Nagpal, Nitin kondhari and Shresth Kumar
 
 # Deployed Link
 
-(https://clone-expedia.netlify.app/)
+https://clone-expedia.netlify.app/
