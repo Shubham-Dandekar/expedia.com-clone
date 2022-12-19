@@ -13,3 +13,12 @@ Shubham Dandekar, Giri Reddy, Dikshant Nagpal, Nitin kondhari and Shresth Kumar
 # Deployed Link
 
 https://clone-expedia.netlify.app/
+
+
+# Screenshots:
+
+<img src="./Screenshots/Screenshot-1">
+<img src="./Screenshots/Screenshot-2">
+<img src="./Screenshots/Screenshot-3">
+<img src="./Screenshots/Screenshot-4">
+<img src="./Screenshots/Screenshot-5">
