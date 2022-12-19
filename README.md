@@ -17,4 +17,8 @@ https://clone-expedia.netlify.app/
 
 # Screenshots:
 
-![Screenshot-1](https://github.com/Shubham-Dandekar/expedia.com-clone/blob/main/Screenshot-1.png?raw=true)
+![Screenshot-1](https://user-images.githubusercontent.com/107460330/208363688-778e76c1-0e99-4940-8f4f-f1dbd4a5c9cb.png)
+![Screenshot-2](https://user-images.githubusercontent.com/107460330/208363692-679a175e-800c-4d79-9cdd-6c3a559dec85.png)
+![Screenshot-3](https://user-images.githubusercontent.com/107460330/208363696-72934762-b387-4cd3-8f2e-8b10c197d1a3.png)
+![Screenshot-4](https://user-images.githubusercontent.com/107460330/208363699-9a85bde3-3fac-4430-89a7-1f228ea551a4.png)
+![Screenshot-5](https://user-images.githubusercontent.com/107460330/208363685-9fedfd12-c78a-4c8f-8caf-fc1b921a871d.png)
