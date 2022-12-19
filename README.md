@@ -17,8 +17,4 @@ https://clone-expedia.netlify.app/
 
 # Screenshots:
 
-<img src="Screenshots/Screenshot-1">
-<img src="Screenshots/Screenshot-2">
-<img src="Screenshots/Screenshot-3">
-<img src="Screenshots/Screenshot-4">
-<img src="Screenshots/Screenshot-5">
+![Screenshot](./Screenshots/Screenshot-1)
