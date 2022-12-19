@@ -17,4 +17,4 @@ https://clone-expedia.netlify.app/
 
 # Screenshots:
 
-![Screenshot](./Screenshots/Screenshot-1)
+![Screenshot-1](https://github.com/Shubham-Dandekar/expedia.com-clone/blob/main/Screenshot-1.png?raw=true)
