@@ -8,7 +8,7 @@ me assigned by Masai School during its unit-3 curriculum.
 
 # Team members:
 
-1. Shubham Dandekar 2. Giri Reddy 3. Dikshant Nagpal 4. Nitin kondhari 5. Shresth Kumar
+Shubham Dandekar, Giri Reddy, Dikshant Nagpal, Nitin kondhari and Shresth Kumar
 
 # Deployed Link
 
